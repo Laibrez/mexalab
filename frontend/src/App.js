@@ -1,32 +1,22 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import HeroSection from './components/HeroSection';
-import ServicesSection from './components/ServicesSection';
-import HomeServiceSection from './components/HomeServiceSection';
-import PackagesSection from './components/PackagesSection';
-import PromotionsSection from './components/PromotionsSection';
-import MembershipSection from './components/MembershipSection';
-import SocialMediaSection from './components/SocialMediaSection';
-import Footer from './components/Footer';
+
+import HomePage from './pages/HomePage';
+import ServiciosPage from './pages/ServiciosPage';
+// Importa aquí los demás componentes de página si los creas
 
 const App = () => {
-  const [currentPage] = useState('home');
-
   return (
     <div className="font-sans">
-      <Navbar />
-      {currentPage === 'home' && (
-        <>
-          <HeroSection />
-          <ServicesSection />
-          <HomeServiceSection />
-          <PackagesSection />
-          <PromotionsSection />
-          <MembershipSection />
-          <SocialMediaSection />
-          <Footer />
-        </>
-      )}
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/servicios" element={<ServiciosPage />} />
+          {/* Agrega más rutas según los componentes que crees */}
+        </Routes>
+      </Router>
     </div>
   );
 };
