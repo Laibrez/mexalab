@@ -1,2 +1,0 @@
-# mexalab
-MexaLab
