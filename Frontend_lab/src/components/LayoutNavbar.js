@@ -1,8 +1,4 @@
-import { useState } from 'react';
-
-const LayoutNavbar = () => {
-  const [activePage, setActivePage] = useState('conocenos');
-
+const LayoutNavbar = ({ activePage, setActivePage }) => {
   return (
     <nav className="bg-white shadow-lg">
       <div className="max-w-6xl mx-auto px-4">
@@ -39,5 +35,3 @@ const LayoutNavbar = () => {
 };
 
 export default LayoutNavbar;
-
-// DONE
