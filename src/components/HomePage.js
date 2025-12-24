@@ -85,8 +85,14 @@ const HomePage = ({ setActivePage }) => {
                   key={index} 
                   className="bg-white rounded-xl p-8 shadow-sm hover:shadow-lg transition duration-300 text-center"
                 >
-                  <div className={`w-16 h-16 mx-auto mb-4 bg-${service.color} bg-opacity-10 rounded-full flex items-center justify-center`}>
-                    <IconComponent className={`w-8 h-8 text-${service.color}`} style={{ color: service.color === 'medical-blue' ? '#1F6AE1' : '#2FBF71' }} />
+                  <div 
+                    className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center"
+                    style={{ backgroundColor: service.color === 'medical-blue' ? 'rgba(31, 106, 225, 0.1)' : 'rgba(47, 191, 113, 0.1)' }}
+                  >
+                    <IconComponent 
+                      className="w-8 h-8" 
+                      style={{ color: service.color === 'medical-blue' ? '#1F6AE1' : '#2FBF71' }} 
+                    />
                   </div>
                   <h3 className="text-xl font-bold text-text-gray mb-3">{service.title}</h3>
                   <p className="text-text-gray leading-relaxed">{service.description}</p>
