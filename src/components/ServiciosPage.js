@@ -113,11 +113,11 @@ const ServiciosPage = () => {
   });
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-teal-50 via-cyan-50 to-blue-50">
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="relative overflow-hidden bg-gradient-to-r from-teal-600 to-cyan-600 text-white">
+      <div className="relative overflow-hidden bg-medical-blue text-white">
         <div className="absolute inset-0 bg-black bg-opacity-10"></div>
-        <div className="relative max-w-6xl mx-auto px-4 py-16">
+        <div className="relative max-w-7xl mx-auto px-4 py-16">
           <div className="text-center">
             <h1 className="text-5xl font-bold mb-4">Nuestros Servicios</h1>
             <p className="text-xl opacity-90 max-w-3xl mx-auto">
@@ -125,28 +125,27 @@ const ServiciosPage = () => {
             </p>
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-teal-50 to-transparent"></div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 py-8 -mt-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 py-12">
         {/* Promotions Section */}
         <div className="mb-12">
-          <div className="bg-white rounded-2xl shadow-2xl p-8 border-t-4 border-teal-500">
+          <div className="bg-white rounded-2xl shadow-lg p-8 border-t-4 border-health-green">
             <div className="flex items-center justify-center mb-8">
-              <div className="w-12 h-12 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-full flex items-center justify-center mr-4">
+              <div className="w-12 h-12 bg-health-green rounded-full flex items-center justify-center mr-4">
                 <Gift className="w-6 h-6 text-white" />
               </div>
-              <h2 className="text-3xl font-bold text-gray-800">Promociones Especiales</h2>
-              <Sparkles className="w-8 h-8 text-teal-500 ml-2" />
+              <h2 className="text-3xl font-bold text-text-gray">Promociones Especiales</h2>
+              <Sparkles className="w-8 h-8 text-health-green ml-2" />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {promotions.map((promo, index) => (
-                <div key={index} className="group relative overflow-hidden bg-gradient-to-br from-teal-500 to-cyan-500 rounded-xl p-6 text-white hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+                <div key={index} className="group relative overflow-hidden bg-medical-blue rounded-xl p-6 text-white hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
                   <div className="absolute top-0 right-0 w-20 h-20 bg-white bg-opacity-10 rounded-full -mr-10 -mt-10"></div>
                   <div className="relative z-10">
                     <h3 className="text-xl font-bold mb-2">{promo.title}</h3>
                     <p className="mb-4 opacity-90">{promo.description}</p>
-                    <div className="bg-white text-teal-600 px-4 py-2 rounded-lg inline-block font-mono font-bold text-sm mb-2">
+                    <div className="bg-white text-medical-blue px-4 py-2 rounded-lg inline-block font-mono font-bold text-sm mb-2">
                       {promo.code}
                     </div>
                     <div className="flex items-center text-sm opacity-75">
@@ -161,14 +160,14 @@ const ServiciosPage = () => {
         </div>
 
         {/* Search and Filter Section */}
-        <div className="bg-white rounded-2xl shadow-2xl p-6 mb-8">
+        <div className="bg-white rounded-2xl shadow-lg p-6 mb-8">
           <div className="flex flex-col md:flex-row gap-4 items-center">
             <div className="relative flex-1">
               <Search className="absolute left-3 top-3 w-5 h-5 text-gray-400" />
               <input
                 type="text"
                 placeholder="Buscar servicios..."
-                className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+                className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-medical-blue focus:border-transparent"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
               />
@@ -178,8 +177,8 @@ const ServiciosPage = () => {
                 onClick={() => setSelectedCategory('all')}
                 className={`px-4 py-2 rounded-lg transition-all ${
                   selectedCategory === 'all' 
-                    ? 'bg-teal-500 text-white' 
-                    : 'bg-gray-100 text-gray-700 hover:bg-teal-100'
+                    ? 'bg-medical-blue text-white' 
+                    : 'bg-gray-100 text-text-gray hover:bg-light-gray'
                 }`}
               >
                 Todos
@@ -190,8 +189,8 @@ const ServiciosPage = () => {
                   onClick={() => setSelectedCategory(grupo.categoria)}
                   className={`px-4 py-2 rounded-lg transition-all ${
                     selectedCategory === grupo.categoria 
-                      ? 'bg-teal-500 text-white' 
-                      : 'bg-gray-100 text-gray-700 hover:bg-teal-100'
+                      ? 'bg-medical-blue text-white' 
+                      : 'bg-gray-100 text-text-gray hover:bg-light-gray'
                   }`}
                 >
                   {grupo.categoria}
@@ -225,15 +224,15 @@ const ServiciosPage = () => {
                   <div className="space-y-3">
                     {grupo.items.map((item, i) => (
                       <div key={i} className="flex items-center group-hover:translate-x-1 transition-transform duration-200">
-                        <div className="w-2 h-2 bg-teal-500 rounded-full mr-3 flex-shrink-0"></div>
-                        <span className="text-gray-700 font-medium">{item}</span>
+                        <div className="w-2 h-2 bg-medical-blue rounded-full mr-3 flex-shrink-0"></div>
+                        <span className="text-text-gray font-medium">{item}</span>
                       </div>
                     ))}
                   </div>
                   
                   {/* Action Button */}
                   <div className="mt-6 pt-4 border-t border-gray-100">
-                    <button className="w-full bg-gradient-to-r from-teal-500 to-cyan-500 text-white py-3 rounded-lg font-semibold hover:from-teal-600 hover:to-cyan-600 transition-all duration-300 flex items-center justify-center group">
+                    <button className="w-full bg-medical-blue text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all duration-300 flex items-center justify-center group">
                       <span>Solicitar información</span>
                       <ChevronRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                     </button>
@@ -247,26 +246,26 @@ const ServiciosPage = () => {
         {/* No Results */}
         {filteredServicios.length === 0 && (
           <div className="bg-white rounded-2xl shadow-lg p-12 text-center">
-            <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="w-16 h-16 bg-light-gray rounded-full flex items-center justify-center mx-auto mb-4">
               <Search className="w-8 h-8 text-gray-400" />
             </div>
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">No se encontraron servicios</h3>
-            <p className="text-gray-600">Intenta con otros términos de búsqueda o categorías</p>
+            <h3 className="text-xl font-semibold text-text-gray mb-2">No se encontraron servicios</h3>
+            <p className="text-text-gray">Intenta con otros términos de búsqueda o categorías</p>
           </div>
         )}
 
         {/* Call to Action */}
-        <div className="mt-12 bg-gradient-to-r from-teal-600 to-cyan-600 rounded-2xl p-8 text-white text-center">
+        <div className="mt-12 bg-medical-blue rounded-2xl p-8 text-white text-center">
           <h3 className="text-2xl font-bold mb-4">¿Necesitas más información?</h3>
           <p className="text-lg opacity-90 mb-6">
             Nuestro equipo está listo para ayudarte a elegir el servicio que mejor se adapte a tus necesidades
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-teal-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 flex items-center justify-center">
+            <button className="bg-white text-medical-blue px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 flex items-center justify-center">
               <CheckCircle className="w-5 h-5 mr-2" />
               Agendar cita
             </button>
-            <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-teal-600 transition-all duration-300">
+            <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-medical-blue transition-all duration-300">
               Contactar por WhatsApp
             </button>
           </div>
