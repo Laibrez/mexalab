@@ -1,11 +1,11 @@
 const LayoutFooter = () => {
   return (
-    <footer className="bg-gray-800 text-white py-8">
-      <div className="max-w-6xl mx-auto px-4">
+    <footer className="bg-dark-blue text-white py-8">
+      <div className="max-w-7xl mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">Laboratorio Clínico</h3>
-            <p className="text-gray-300">
+            <h3 className="text-xl font-bold mb-4">MexaLab</h3>
+            <p className="text-gray-300 leading-relaxed">
               Servicios de diagnóstico clínico con la más alta tecnología y calidad.
             </p>
           </div>
@@ -39,7 +39,7 @@ const LayoutFooter = () => {
           </div>
         </div>
         <div className="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
-          <p>© {new Date().getFullYear()} Laboratorio Clínico. Todos los derechos reservados.</p>
+          <p>© {new Date().getFullYear()} MexaLab. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
