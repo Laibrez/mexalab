@@ -11,22 +11,30 @@ const LayoutFooter = () => {
           </div>
           <div>
             <h3 className="text-xl font-bold mb-4">Contacto</h3>
-            <p className="text-gray-300 mb-2">Av. Revolución 123, CDMX</p>
-            <p className="text-gray-300 mb-2">55 1234 5678</p>
-            <p className="text-gray-300">info@laboratorio.com</p>
+            <p className="text-gray-300 mb-2">Aluminio 245, Col. Popular Rastro</p>
+            <p className="text-gray-300 mb-2">Alc. Venustiano Carranza, CDMX, CP: 15220</p>
+            <p className="text-gray-300 mb-2">55 8498 4243</p>
+            <p className="text-gray-300">mexalab.1@gmail.com</p>
           </div>
           <div>
             <h3 className="text-xl font-bold mb-4">Redes Sociales</h3>
             <div className="flex space-x-4">
-              <button className="text-gray-300 hover:text-white">
+              <a 
+                href="https://www.facebook.com/mexa.lab/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-white transition-colors"
+              >
                 <span className="text-lg">FB</span>
-              </button>
-              <button className="text-gray-300 hover:text-white">
-                <span className="text-lg">TW</span>
-              </button>
-              <button className="text-gray-300 hover:text-white">
+              </a>
+              <a 
+                href="https://www.instagram.com/mexa.labs" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-white transition-colors"
+              >
                 <span className="text-lg">IG</span>
-              </button>
+              </a>
             </div>
           </div>
         </div>

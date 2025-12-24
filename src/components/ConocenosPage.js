@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Clock, Mail, Globe, Users, Award, Heart } from 'lucide-react';
+import { MapPin, Phone, Clock, Mail, Globe, Users, Award, Heart, Facebook, Instagram } from 'lucide-react';
 
 const ConocenosPage = () => {
   return (
@@ -28,7 +28,7 @@ const ConocenosPage = () => {
             <h2 className="text-3xl font-bold text-gray-800">¿Quiénes Somos?</h2>
           </div>
           <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-            Somos un laboratorio clínico fundado en Ciudad de México, ofreciendo servicios a hoteles, clínicas,
+            Empresa dedicada a realizar estudios médicos. Somos un laboratorio clínico fundado en Ciudad de México, ofreciendo servicios a hoteles, clínicas,
             empresas grandes y medianas. Fundado en medio de la pandemia, buscamos brindar soluciones accesibles 
             y de calidad a los problemas de salud en México.
           </p>
@@ -97,9 +97,9 @@ const ConocenosPage = () => {
                 <div>
                   <h4 className="font-bold text-teal-700 mb-2">Dirección</h4>
                   <p className="text-gray-600">
-                    Alunico 245, Col. Popular Rastro,<br />
-                    Delegación Venustiano Carranza, CDMX<br />
-                    CP: 15220
+                    Aluminio 245, Col. Popular Rastro,<br />
+                    Alc. Venustiano Carranza, CDMX<br />
+                    CP: 15220, Mexico City, Mexico
                   </p>
                 </div>
               </div>
@@ -110,7 +110,7 @@ const ConocenosPage = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-teal-700 mb-2">Teléfono</h4>
-                  <p className="text-gray-600 text-lg">55 1234 5678</p>
+                  <p className="text-gray-600 text-lg">55 8498 4243</p>
                 </div>
               </div>
             </div>
@@ -139,6 +139,30 @@ const ConocenosPage = () => {
                   <p className="text-gray-600">mexalab.1@gmail.com</p>
                 </div>
               </div>
+            </div>
+          </div>
+          
+          <div className="mt-8">
+            <h4 className="text-xl font-bold text-gray-800 mb-4 text-center">Redes Sociales</h4>
+            <div className="flex justify-center space-x-4">
+              <a 
+                href="https://www.facebook.com/mexa.lab/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center p-4 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg text-white hover:shadow-lg transition-all duration-300"
+              >
+                <Facebook className="w-5 h-5 mr-2" />
+                <span className="font-semibold">Facebook</span>
+              </a>
+              <a 
+                href="https://www.instagram.com/mexa.labs" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center p-4 bg-gradient-to-r from-pink-500 to-purple-600 rounded-lg text-white hover:shadow-lg transition-all duration-300"
+              >
+                <Instagram className="w-5 h-5 mr-2" />
+                <span className="font-semibold">Instagram</span>
+              </a>
             </div>
           </div>
           
@@ -175,7 +199,8 @@ const ConocenosPage = () => {
               <div className="w-12 h-12 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-full flex items-center justify-center mb-4 mx-auto">
                 <Award className="w-6 h-6 text-white" />
               </div>
-              <h4 className="font-bold text-teal-700 mb-3 text-center">Aviso de Publicidad</h4>
+              <h4 className="font-bold text-teal-700 mb-3 text-center">Aviso de Publicidad COFEPRIS</h4>
+              <p className="text-gray-700 text-center font-semibold mb-2">2309162002A00009</p>
               <p className="text-center">
                 <a 
                   href="https://digipris.cofepris.gob.mx/getTramiteid=6owRb9nmZWzQMpVdd2Uo%2BAHBbQVBcNL5" 
