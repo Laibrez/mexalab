@@ -46,8 +46,8 @@ const ConocenosPage = () => {
           </div>
         </div>
 
-        {/* Team Section */}
-        <div className="bg-white rounded-2xl shadow-2xl p-8 mb-8">
+        {/* Team Section - Oculto temporalmente */}
+        <div className="hidden bg-white rounded-2xl shadow-2xl p-8 mb-8">
           <div className="flex items-center mb-8">
             <div className="w-12 h-12 bg-teal-500 rounded-full flex items-center justify-center mr-4">
               <Users className="w-6 h-6 text-white" />
