@@ -22,7 +22,7 @@ const LayoutFooter = () => {
               <p className="font-semibold text-white mb-1">Sucursal Tlatelolco:</p>
               <p>Av. Ricardo Flores Magón 160-B, Cuauhtémoc, CDMX</p>
             </div>
-            <p className="text-gray-300 mb-2">55 1234 5678</p>
+            <p className="text-gray-300 mb-2">55 8498 4243</p>
             <p className="text-gray-300">mexalab.1@gmail.com</p>
           </div>
           <div>

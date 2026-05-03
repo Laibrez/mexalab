@@ -146,7 +146,7 @@ const ConocenosPage = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-teal-700 mb-2">Teléfono</h4>
-                  <p className="text-gray-600 text-lg">55 1234 5678</p>
+                  <p className="text-gray-600 text-lg">55 8498 4243</p>
                 </div>
               </div>
             </div>
