@@ -88,26 +88,26 @@ const ConocenosPage = () => {
         {/* Ultrasound Section */}
         <div className="bg-white rounded-2xl shadow-2xl p-8 mb-8 border-t-4 border-teal-500">
           <div className="flex items-center mb-8 text-center justify-center">
-            <h3 className="text-3xl font-semibold text-gray-800">Imágenes de Ultrasonido</h3>
+            <h3 className="text-3xl font-semibold text-gray-800">Nuestra Presentación</h3>
           </div>
           <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
             Contamos con equipo de última generación para brindarte resultados precisos y confiables en nuestros estudios de imagen.
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
-              <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=600" alt="Ultrasonido diagnóstico" className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500" />
+              <img src="/SALUD es riqueza.png" alt="Salud es riqueza" className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500" />
               <div className="absolute inset-0 bg-teal-900 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                 <span className="text-white font-semibold text-lg">Alta Precisión</span>
               </div>
             </div>
             <div className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
-              <img src="https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?auto=format&fit=crop&q=80&w=600" alt="Estudio en progreso" className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500" />
+              <img src="/Bienestar_Mexalab.png" alt="Bienestar Mexalab" className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500" />
               <div className="absolute inset-0 bg-teal-900 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                 <span className="text-white font-semibold text-lg">Tecnología Avanzada</span>
               </div>
             </div>
             <div className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
-              <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=600" alt="Equipo médico" className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500" />
+              <img src="/calidad_servicio.png" alt="Calidad y Servicio" className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500" />
               <div className="absolute inset-0 bg-teal-900 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                 <span className="text-white font-semibold text-lg">Resultados Inmediatos</span>
               </div>
