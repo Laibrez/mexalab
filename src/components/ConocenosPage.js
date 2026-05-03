@@ -3,9 +3,9 @@ import { MapPin, Phone, Clock, Mail, Globe, Users, Award, Heart } from 'lucide-r
 
 const ConocenosPage = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-teal-50 to-cyan-50">
+    <div className="min-h-screen bg-teal-50">
       {/* Hero Section */}
-      <div className="relative overflow-hidden bg-gradient-to-r from-teal-600 to-cyan-600 text-white">
+      <div className="relative overflow-hidden bg-teal-600 text-white">
         <div className="absolute inset-0 bg-black bg-opacity-10"></div>
         <div className="relative max-w-6xl mx-auto px-4 py-16">
           <div className="text-center">
@@ -22,7 +22,7 @@ const ConocenosPage = () => {
         {/* About Section */}
         <div className="bg-white rounded-2xl shadow-2xl p-8 mb-8 border-t-4 border-teal-500">
           <div className="flex items-center mb-6">
-            <div className="w-12 h-12 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-full flex items-center justify-center mr-4">
+            <div className="w-12 h-12 bg-teal-500 rounded-full flex items-center justify-center mr-4">
               <Heart className="w-6 h-6 text-white" />
             </div>
             <h2 className="text-3xl font-bold text-gray-800">¿Quiénes Somos?</h2>
@@ -34,7 +34,7 @@ const ConocenosPage = () => {
           </p>
 
           {/* Mission Section */}
-          <div className="bg-gradient-to-r from-teal-50 to-cyan-50 p-8 rounded-xl mb-8 border-l-4 border-teal-500">
+          <div className="bg-teal-50 p-8 rounded-xl mb-8 border-l-4 border-teal-500">
             <h3 className="text-2xl font-semibold text-teal-700 mb-4 flex items-center">
               <Award className="w-6 h-6 mr-2" />
               Misión
@@ -49,14 +49,14 @@ const ConocenosPage = () => {
         {/* Team Section */}
         <div className="bg-white rounded-2xl shadow-2xl p-8 mb-8">
           <div className="flex items-center mb-8">
-            <div className="w-12 h-12 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-full flex items-center justify-center mr-4">
+            <div className="w-12 h-12 bg-teal-500 rounded-full flex items-center justify-center mr-4">
               <Users className="w-6 h-6 text-white" />
             </div>
             <h3 className="text-3xl font-semibold text-gray-800">Nuestro Equipo</h3>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="group bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:scale-105">
-              <div className="h-48 bg-gradient-to-br from-teal-200 to-cyan-300 rounded-lg mb-4 flex items-center justify-center">
+              <div className="h-48 bg-teal-200 rounded-lg mb-4 flex items-center justify-center">
                 <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center">
                   <Users className="w-10 h-10 text-teal-600" />
                 </div>
@@ -65,7 +65,7 @@ const ConocenosPage = () => {
               <p className="text-teal-600 font-medium">Jefa de Enfermería</p>
             </div>
             <div className="group bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:scale-105">
-              <div className="h-48 bg-gradient-to-br from-teal-200 to-cyan-300 rounded-lg mb-4 flex items-center justify-center">
+              <div className="h-48 bg-teal-200 rounded-lg mb-4 flex items-center justify-center">
                 <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center">
                   <Users className="w-10 h-10 text-teal-600" />
                 </div>
@@ -74,7 +74,7 @@ const ConocenosPage = () => {
               <p className="text-teal-600 font-medium">Administración y Dirección Empresarial</p>
             </div>
             <div className="group bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:scale-105">
-              <div className="h-48 bg-gradient-to-br from-teal-200 to-cyan-300 rounded-lg mb-4 flex items-center justify-center">
+              <div className="h-48 bg-teal-200 rounded-lg mb-4 flex items-center justify-center">
                 <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center">
                   <Users className="w-10 h-10 text-teal-600" />
                 </div>
@@ -85,26 +85,62 @@ const ConocenosPage = () => {
           </div>
         </div>
 
+        {/* Ultrasound Section */}
+        <div className="bg-white rounded-2xl shadow-2xl p-8 mb-8 border-t-4 border-teal-500">
+          <div className="flex items-center mb-8 text-center justify-center">
+            <h3 className="text-3xl font-semibold text-gray-800">Imágenes de Ultrasonido</h3>
+          </div>
+          <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
+            Contamos con equipo de última generación para brindarte resultados precisos y confiables en nuestros estudios de imagen.
+          </p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
+              <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=600" alt="Ultrasonido diagnóstico" className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500" />
+              <div className="absolute inset-0 bg-teal-900 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <span className="text-white font-semibold text-lg">Alta Precisión</span>
+              </div>
+            </div>
+            <div className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
+              <img src="https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?auto=format&fit=crop&q=80&w=600" alt="Estudio en progreso" className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500" />
+              <div className="absolute inset-0 bg-teal-900 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <span className="text-white font-semibold text-lg">Tecnología Avanzada</span>
+              </div>
+            </div>
+            <div className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
+              <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=600" alt="Equipo médico" className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500" />
+              <div className="absolute inset-0 bg-teal-900 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <span className="text-white font-semibold text-lg">Resultados Inmediatos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Contact Section */}
         <div className="bg-white rounded-2xl shadow-2xl p-8 mb-8">
           <h3 className="text-3xl font-semibold text-gray-800 mb-8 text-center">Contacto</h3>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-6">
-              <div className="flex items-start p-4 bg-gradient-to-r from-teal-50 to-cyan-50 rounded-lg">
+              <div className="flex items-start p-4 bg-teal-50 rounded-lg">
                 <div className="w-10 h-10 bg-teal-500 rounded-full flex items-center justify-center mr-4 mt-1">
                   <MapPin className="w-5 h-5 text-white" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-teal-700 mb-2">Dirección</h4>
+                  <h4 className="font-bold text-teal-700 mb-2">Sucursal Popular Rastro</h4>
+                  <p className="text-gray-600 mb-4">
+                    C. Aluminio 245-PB, Popular Rastro,<br />
+                    Venustiano Carranza, 15220<br />
+                    Ciudad de México, CDMX
+                  </p>
+                  <h4 className="font-bold text-teal-700 mb-2 border-t pt-4 border-teal-100">Sucursal Tlatelolco</h4>
                   <p className="text-gray-600">
-                    Alunico 245, Col. Popular Rastro,<br />
-                    Delegación Venustiano Carranza, CDMX<br />
-                    CP: 15220
+                    Av. Ricardo Flores Magón 160-B,<br />
+                    Colonia Buenavista, Cuauhtémoc,<br />
+                    Ciudad de México, CDMX
                   </p>
                 </div>
               </div>
               
-              <div className="flex items-start p-4 bg-gradient-to-r from-teal-50 to-cyan-50 rounded-lg">
+              <div className="flex items-start p-4 bg-teal-50 rounded-lg">
                 <div className="w-10 h-10 bg-teal-500 rounded-full flex items-center justify-center mr-4 mt-1">
                   <Phone className="w-5 h-5 text-white" />
                 </div>
@@ -116,7 +152,7 @@ const ConocenosPage = () => {
             </div>
             
             <div className="space-y-6">
-              <div className="flex items-start p-4 bg-gradient-to-r from-teal-50 to-cyan-50 rounded-lg">
+              <div className="flex items-start p-4 bg-teal-50 rounded-lg">
                 <div className="w-10 h-10 bg-teal-500 rounded-full flex items-center justify-center mr-4 mt-1">
                   <Clock className="w-5 h-5 text-white" />
                 </div>
@@ -128,7 +164,7 @@ const ConocenosPage = () => {
                 </div>
               </div>
               
-              <div className="flex items-start p-4 bg-gradient-to-r from-teal-50 to-cyan-50 rounded-lg">
+              <div className="flex items-start p-4 bg-teal-50 rounded-lg">
                 <div className="w-10 h-10 bg-teal-500 rounded-full flex items-center justify-center mr-4 mt-1">
                   <Mail className="w-5 h-5 text-white" />
                 </div>
@@ -143,9 +179,9 @@ const ConocenosPage = () => {
           </div>
           
           <div className="mt-8 text-center">
-            <div className="inline-flex items-center p-4 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-lg text-white">
+            <div className="inline-flex items-center p-4 bg-teal-500 rounded-lg text-white">
               <Globe className="w-5 h-5 mr-2" />
-              <span className="font-semibold">www.mexalab.com</span>
+              <span className="font-semibold">laboratoriosmexalab.com</span>
             </div>
           </div>
         </div>
@@ -154,8 +190,8 @@ const ConocenosPage = () => {
         <div className="bg-white rounded-2xl shadow-2xl p-8">
           <h3 className="text-3xl font-semibold text-gray-800 mb-8 text-center">Permisos y Certificaciones</h3>
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="group bg-gradient-to-br from-teal-50 to-cyan-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-teal-200">
-              <div className="w-12 h-12 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+            <div className="group bg-teal-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-teal-200">
+              <div className="w-12 h-12 bg-teal-500 rounded-full flex items-center justify-center mb-4 mx-auto">
                 <Award className="w-6 h-6 text-white" />
               </div>
               <h4 className="font-bold text-teal-700 mb-3 text-center">Aviso de Funcionamiento y Responsable Sanitario</h4>
@@ -171,8 +207,8 @@ const ConocenosPage = () => {
               </p>
             </div>
             
-            <div className="group bg-gradient-to-br from-teal-50 to-cyan-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-teal-200">
-              <div className="w-12 h-12 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+            <div className="group bg-teal-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-teal-200">
+              <div className="w-12 h-12 bg-teal-500 rounded-full flex items-center justify-center mb-4 mx-auto">
                 <Award className="w-6 h-6 text-white" />
               </div>
               <h4 className="font-bold text-teal-700 mb-3 text-center">Aviso de Publicidad</h4>
@@ -188,8 +224,8 @@ const ConocenosPage = () => {
               </p>
             </div>
             
-            <div className="group bg-gradient-to-br from-gray-50 to-gray-100 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-gray-200">
-              <div className="w-12 h-12 bg-gradient-to-r from-gray-400 to-gray-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+            <div className="group bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-gray-200">
+              <div className="w-12 h-12 bg-gray-500 rounded-full flex items-center justify-center mb-4 mx-auto">
                 <Award className="w-6 h-6 text-white" />
               </div>
               <h4 className="font-bold text-gray-700 mb-3 text-center">Certificaciones</h4>

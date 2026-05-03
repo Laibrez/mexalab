@@ -14,15 +14,15 @@ import {
   Search
 } from 'lucide-react';
 
-const ServiciosPage = () => {
+const ServiciosPage = ({ setActivePage, setSelectedCategory }) => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState('all');
+  const [filterCategory, setFilterCategory] = useState('all');
 
   const servicios = [
     {
       categoria: "Ultrasonidos",
       icon: Activity,
-      color: "from-teal-500 to-cyan-500",
+      color: "bg-teal-500",
       items: [
         "Ultrasonido abdominal",
         "Ultrasonido pélvico",
@@ -33,7 +33,7 @@ const ServiciosPage = () => {
     {
       categoria: "Electrocardiogramas",
       icon: Heart,
-      color: "from-cyan-500 to-blue-500",
+      color: "bg-cyan-500",
       items: [
         "Electrocardiograma básico",
         "Prueba de esfuerzo",
@@ -43,7 +43,7 @@ const ServiciosPage = () => {
     {
       categoria: "Chequeos",
       icon: UserCheck,
-      color: "from-teal-600 to-emerald-500",
+      color: "bg-teal-600",
       items: [
         "Chequeo ejecutivo",
         "Chequeo básico",
@@ -54,7 +54,7 @@ const ServiciosPage = () => {
     {
       categoria: "Química Sanguínea",
       icon: FlaskConical,
-      color: "from-cyan-600 to-teal-600",
+      color: "bg-cyan-600",
       items: [
         "Perfil básico",
         "Perfil hepático",
@@ -65,7 +65,7 @@ const ServiciosPage = () => {
     {
       categoria: "Biometría Hemática",
       icon: Droplets,
-      color: "from-teal-500 to-cyan-600",
+      color: "bg-teal-500",
       items: [
         "Hemograma completo",
         "Velocidad de sedimentación",
@@ -75,11 +75,29 @@ const ServiciosPage = () => {
     {
       categoria: "Perfiles Hormonales",
       icon: Zap,
-      color: "from-cyan-500 to-teal-500",
+      color: "bg-cyan-500",
       items: [
         "Perfil tiroideo",
         "Perfil hormonal femenino",
         "Perfil hormonal masculino"
+      ]
+    },
+    {
+      categoria: "Rayos X",
+      icon: Activity,
+      color: "bg-blue-500",
+      items: [
+        "Tele de Torax",
+        "Rayos X de extremidades",
+        "Rayos X de columna"
+      ]
+    },
+    {
+      categoria: "Servicios Especiales",
+      icon: Search,
+      color: "bg-teal-700",
+      items: [
+        "Servicio en inglés con certificados traducidos"
       ]
     }
   ];
@@ -108,14 +126,14 @@ const ServiciosPage = () => {
   const filteredServicios = servicios.filter(grupo => {
     const matchesSearch = grupo.categoria.toLowerCase().includes(searchTerm.toLowerCase()) ||
                          grupo.items.some(item => item.toLowerCase().includes(searchTerm.toLowerCase()));
-    const matchesCategory = selectedCategory === 'all' || grupo.categoria === selectedCategory;
+    const matchesCategory = filterCategory === 'all' || grupo.categoria === filterCategory;
     return matchesSearch && matchesCategory;
   });
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-teal-50 via-cyan-50 to-blue-50">
+    <div className="min-h-screen bg-teal-50">
       {/* Hero Section */}
-      <div className="relative overflow-hidden bg-gradient-to-r from-teal-600 to-cyan-600 text-white">
+      <div className="relative overflow-hidden bg-teal-600 text-white">
         <div className="absolute inset-0 bg-black bg-opacity-10"></div>
         <div className="relative max-w-6xl mx-auto px-4 py-16">
           <div className="text-center">
@@ -125,7 +143,7 @@ const ServiciosPage = () => {
             </p>
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-teal-50 to-transparent"></div>
+        
       </div>
 
       <div className="max-w-6xl mx-auto px-4 py-8 -mt-8 relative z-10">
@@ -133,7 +151,7 @@ const ServiciosPage = () => {
         <div className="mb-12">
           <div className="bg-white rounded-2xl shadow-2xl p-8 border-t-4 border-teal-500">
             <div className="flex items-center justify-center mb-8">
-              <div className="w-12 h-12 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-full flex items-center justify-center mr-4">
+              <div className="w-12 h-12 bg-teal-500 rounded-full flex items-center justify-center mr-4">
                 <Gift className="w-6 h-6 text-white" />
               </div>
               <h2 className="text-3xl font-bold text-gray-800">Promociones Especiales</h2>
@@ -141,7 +159,7 @@ const ServiciosPage = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {promotions.map((promo, index) => (
-                <div key={index} className="group relative overflow-hidden bg-gradient-to-br from-teal-500 to-cyan-500 rounded-xl p-6 text-white hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+                <a href="/cupon.pdf" download key={index} className="block group relative overflow-hidden bg-teal-500 rounded-xl p-6 text-white hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
                   <div className="absolute top-0 right-0 w-20 h-20 bg-white bg-opacity-10 rounded-full -mr-10 -mt-10"></div>
                   <div className="relative z-10">
                     <h3 className="text-xl font-bold mb-2">{promo.title}</h3>
@@ -149,12 +167,15 @@ const ServiciosPage = () => {
                     <div className="bg-white text-teal-600 px-4 py-2 rounded-lg inline-block font-mono font-bold text-sm mb-2">
                       {promo.code}
                     </div>
-                    <div className="flex items-center text-sm opacity-75">
+                    <div className="flex items-center text-sm opacity-75 mt-2">
                       <Clock className="w-4 h-4 mr-1" />
                       <span>{promo.expiry}</span>
                     </div>
+                    <div className="mt-4 text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
+                      Click para descargar PDF
+                    </div>
                   </div>
-                </div>
+                </a>
               ))}
             </div>
           </div>
@@ -175,9 +196,9 @@ const ServiciosPage = () => {
             </div>
             <div className="flex flex-wrap gap-2">
               <button
-                onClick={() => setSelectedCategory('all')}
+                onClick={() => setFilterCategory('all')}
                 className={`px-4 py-2 rounded-lg transition-all ${
-                  selectedCategory === 'all' 
+                  filterCategory === 'all' 
                     ? 'bg-teal-500 text-white' 
                     : 'bg-gray-100 text-gray-700 hover:bg-teal-100'
                 }`}
@@ -187,9 +208,9 @@ const ServiciosPage = () => {
               {servicios.map((grupo, index) => (
                 <button
                   key={index}
-                  onClick={() => setSelectedCategory(grupo.categoria)}
+                  onClick={() => setFilterCategory(grupo.categoria)}
                   className={`px-4 py-2 rounded-lg transition-all ${
-                    selectedCategory === grupo.categoria 
+                    filterCategory === grupo.categoria 
                       ? 'bg-teal-500 text-white' 
                       : 'bg-gray-100 text-gray-700 hover:bg-teal-100'
                   }`}
@@ -208,7 +229,7 @@ const ServiciosPage = () => {
             return (
               <div key={index} className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 overflow-hidden">
                 {/* Header */}
-                <div className={`bg-gradient-to-r ${grupo.color} p-6 text-white`}>
+                <div className={`${grupo.color} p-6 text-white`}>
                   <div className="flex items-center justify-between">
                     <div className="flex items-center">
                       <div className="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-4">
@@ -233,8 +254,14 @@ const ServiciosPage = () => {
                   
                   {/* Action Button */}
                   <div className="mt-6 pt-4 border-t border-gray-100">
-                    <button className="w-full bg-gradient-to-r from-teal-500 to-cyan-500 text-white py-3 rounded-lg font-semibold hover:from-teal-600 hover:to-cyan-600 transition-all duration-300 flex items-center justify-center group">
-                      <span>Solicitar información</span>
+                    <button 
+                      onClick={() => {
+                        setSelectedCategory(grupo.categoria);
+                        setActivePage('servicio_detalle');
+                      }}
+                      className="w-full bg-teal-500 text-white py-3 rounded-lg font-semibold hover:bg-teal-600 transition-all duration-300 flex items-center justify-center group"
+                    >
+                      <span>Ver Paquetes y Detalles</span>
                       <ChevronRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                     </button>
                   </div>
@@ -256,7 +283,7 @@ const ServiciosPage = () => {
         )}
 
         {/* Call to Action */}
-        <div className="mt-12 bg-gradient-to-r from-teal-600 to-cyan-600 rounded-2xl p-8 text-white text-center">
+        <div className="mt-12 bg-teal-600 rounded-2xl p-8 text-white text-center">
           <h3 className="text-2xl font-bold mb-4">¿Necesitas más información?</h3>
           <p className="text-lg opacity-90 mb-6">
             Nuestro equipo está listo para ayudarte a elegir el servicio que mejor se adapte a tus necesidades
@@ -266,9 +293,9 @@ const ServiciosPage = () => {
               <CheckCircle className="w-5 h-5 mr-2" />
               Agendar cita
             </button>
-            <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-teal-600 transition-all duration-300">
+            <a href="https://wa.me/525512345678" target="_blank" rel="noopener noreferrer" className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-teal-600 transition-all duration-300 flex items-center justify-center">
               Contactar por WhatsApp
-            </button>
+            </a>
           </div>
         </div>
       </div>

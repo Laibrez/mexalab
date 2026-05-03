@@ -4,9 +4,12 @@ import ConocenosPage from './components/ConocenosPage';
 import DomicilioPage from './components/DomicilioPage';
 import ServiciosPage from './components/ServiciosPage';
 import LayoutFooter from './components/LayoutFooter';
+import PaquetesPage from './components/PaquetesPage';
+import ServicioDetallePage from './components/ServicioDetallePage';
 
 const App = () => {
   const [activePage, setActivePage] = useState('conocenos');
+  const [selectedCategory, setSelectedCategory] = useState(null);
 
   const renderPage = () => {
     switch(activePage) {
@@ -15,7 +18,11 @@ const App = () => {
       case 'domicilio':
         return <DomicilioPage />;
       case 'servicios':
-        return <ServiciosPage />;
+        return <ServiciosPage setActivePage={setActivePage} setSelectedCategory={setSelectedCategory} />;
+      case 'paquetes':
+        return <PaquetesPage />;
+      case 'servicio_detalle':
+        return <ServicioDetallePage category={selectedCategory} setActivePage={setActivePage} />;
       default:
         return <ConocenosPage />;
     }

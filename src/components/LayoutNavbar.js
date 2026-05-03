@@ -22,6 +22,12 @@ const LayoutNavbar = ({ activePage, setActivePage }) => {
               Servicios a Domicilio
             </button>
             <button 
+              onClick={() => setActivePage('paquetes')}
+              className={`py-4 px-2 ${activePage === 'paquetes' ? 'text-blue-500 border-b-4 border-blue-500' : 'text-gray-500'} font-semibold hover:text-blue-500 transition duration-300`}
+            >
+              Paquetes
+            </button>
+            <button 
               onClick={() => setActivePage('servicios')}
               className={`py-4 px-2 ${activePage === 'servicios' ? 'text-blue-500 border-b-4 border-blue-500' : 'text-gray-500'} font-semibold hover:text-blue-500 transition duration-300`}
             >
