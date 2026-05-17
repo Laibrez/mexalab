@@ -39,17 +39,30 @@ const ConocenosPage = ({ setActivePage }) => {
               </div>
             </div>
             
-            <div className="flex items-center gap-4">
-              <div className="flex -space-x-4">
-                <div className="w-12 h-12 rounded-full bg-gray-300 border-2 border-[#f6f5ef] flex items-center justify-center overflow-hidden relative z-20"><img src="/SALUD es riqueza.png" alt="Avatar 1" className="w-full h-full object-cover" /></div>
-                <div className="w-12 h-12 rounded-full bg-gray-400 border-2 border-[#f6f5ef] flex items-center justify-center overflow-hidden relative z-10"><img src="/Bienestar_Mexalab.png" alt="Avatar 2" className="w-full h-full object-cover" /></div>
-                <div className="w-12 h-12 rounded-full bg-teal-100 border-2 border-[#f6f5ef] flex items-center justify-center font-bold text-teal-900 relative z-0">
-                  +1K
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-6">
+              <div className="flex items-center gap-3">
+                <div className="flex -space-x-3">
+                  <div className="w-10 h-10 lg:w-9 lg:h-9 rounded-full bg-gray-300 border-2 border-[#f6f5ef] flex items-center justify-center overflow-hidden relative z-20"><img src="/SALUD es riqueza.png" alt="Avatar 1" className="w-full h-full object-cover" /></div>
+                  <div className="w-10 h-10 lg:w-9 lg:h-9 rounded-full bg-gray-400 border-2 border-[#f6f5ef] flex items-center justify-center overflow-hidden relative z-10"><img src="/Bienestar_Mexalab.png" alt="Avatar 2" className="w-full h-full object-cover" /></div>
+                  <div className="w-10 h-10 lg:w-9 lg:h-9 rounded-full bg-teal-100 border-2 border-[#f6f5ef] flex items-center justify-center font-bold text-teal-900 relative z-0 text-xs">
+                    +1K
+                  </div>
                 </div>
+                <p className="text-xs lg:text-[13px] text-gray-500 max-w-[100px] leading-tight font-medium">
+                  pacientes al mes
+                </p>
               </div>
-              <p className="text-sm text-gray-500 max-w-[200px] leading-tight">
-                <span className="font-bold text-teal-900">+5 años en el mercado</span> y pacientes satisfechos cada mes
-              </p>
+
+              <div className="hidden sm:block w-px h-8 bg-gray-300"></div>
+
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 lg:w-9 lg:h-9 rounded-full bg-teal-900 text-white flex items-center justify-center font-bold text-xs">
+                  +5
+                </div>
+                <p className="text-xs lg:text-[13px] text-gray-500 max-w-[100px] leading-tight font-medium">
+                  años en el mercado
+                </p>
+              </div>
             </div>
           </div>
 
