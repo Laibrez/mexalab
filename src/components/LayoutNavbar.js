@@ -14,10 +14,10 @@ const LayoutNavbar = ({ activePage, setActivePage }) => {
         <div className="flex justify-between items-center">
           <div className="flex space-x-7">
             <div className="flex items-center py-3 px-2">
-              <img src="/logo.png" alt="MexaLab Logo" className="h-36 cursor-pointer hover:opacity-80 transition-opacity" onClick={() => setActivePage('conocenos')} />
+              <img src="/logo.png" alt="MexaLab Logo" className="h-16 md:h-20 lg:h-24 cursor-pointer hover:opacity-80 transition-opacity" onClick={() => setActivePage('conocenos')} />
             </div>
           </div>
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden lg:flex items-center space-x-4">
             <button 
               onClick={() => setActivePage('conocenos')}
               className={`py-6 px-3 text-lg ${activePage === 'conocenos' ? 'text-teal-700 border-b-4 border-teal-700' : 'text-gray-600'} font-semibold hover:text-teal-700 transition duration-300`}
@@ -43,8 +43,8 @@ const LayoutNavbar = ({ activePage, setActivePage }) => {
               Servicios
             </button>
           </div>
-          {/* Hamburger Icon for Mobile */}
-          <div className="md:hidden flex items-center py-6 px-2">
+          {/* Hamburger Icon for Mobile & iPad */}
+          <div className="lg:hidden flex items-center py-6 px-2">
             <button onClick={() => setIsOpen(!isOpen)} className="text-gray-600 hover:text-teal-700 focus:outline-none">
               {isOpen ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" />}
             </button>
@@ -52,9 +52,9 @@ const LayoutNavbar = ({ activePage, setActivePage }) => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile & iPad Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100 px-2 pt-2 pb-4 space-y-1 shadow-lg absolute w-full z-50">
+        <div className="lg:hidden bg-white border-t border-gray-100 px-2 pt-2 pb-4 space-y-1 shadow-lg absolute w-full z-50">
           <button 
             onClick={() => handleNavClick('conocenos')}
             className={`block w-full text-left px-3 py-3 rounded-md text-lg font-medium ${activePage === 'conocenos' ? 'text-teal-700 bg-teal-50' : 'text-gray-600 hover:text-teal-700 hover:bg-teal-50'} transition duration-300`}
