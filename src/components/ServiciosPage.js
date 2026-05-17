@@ -135,7 +135,7 @@ const ServiciosPage = ({ setActivePage, setSelectedCategory }) => {
       {/* Hero Section */}
       <div className="relative overflow-hidden bg-teal-600 text-white">
         <div className="absolute inset-0 bg-black bg-opacity-10"></div>
-        <div className="relative max-w-6xl mx-auto px-4 py-16">
+        <div className="relative w-[95%] max-w-[1600px] mx-auto px-4 py-16">
           <div className="text-center">
             <h1 className="text-5xl font-bold mb-4">Nuestros Servicios</h1>
             <p className="text-xl opacity-90 max-w-3xl mx-auto">
@@ -146,7 +146,7 @@ const ServiciosPage = ({ setActivePage, setSelectedCategory }) => {
         
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 py-8 -mt-8 relative z-10">
+      <div className="w-[95%] max-w-[1600px] mx-auto px-4 py-12 mt-12 relative z-10">
         {/* Promotions Section */}
         <div className="mb-12">
           <div className="bg-white rounded-2xl shadow-2xl p-8 border-t-4 border-teal-500">
@@ -181,46 +181,7 @@ const ServiciosPage = ({ setActivePage, setSelectedCategory }) => {
           </div>
         </div>
 
-        {/* Search and Filter Section */}
-        <div className="bg-white rounded-2xl shadow-2xl p-6 mb-8">
-          <div className="flex flex-col md:flex-row gap-4 items-center">
-            <div className="relative flex-1">
-              <Search className="absolute left-3 top-3 w-5 h-5 text-gray-400" />
-              <input
-                type="text"
-                placeholder="Buscar servicios..."
-                className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-              />
-            </div>
-            <div className="flex flex-wrap gap-2">
-              <button
-                onClick={() => setFilterCategory('all')}
-                className={`px-4 py-2 rounded-lg transition-all ${
-                  filterCategory === 'all' 
-                    ? 'bg-teal-500 text-white' 
-                    : 'bg-gray-100 text-gray-700 hover:bg-teal-100'
-                }`}
-              >
-                Todos
-              </button>
-              {servicios.map((grupo, index) => (
-                <button
-                  key={index}
-                  onClick={() => setFilterCategory(grupo.categoria)}
-                  className={`px-4 py-2 rounded-lg transition-all ${
-                    filterCategory === grupo.categoria 
-                      ? 'bg-teal-500 text-white' 
-                      : 'bg-gray-100 text-gray-700 hover:bg-teal-100'
-                  }`}
-                >
-                  {grupo.categoria}
-                </button>
-              ))}
-            </div>
-          </div>
-        </div>
+
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

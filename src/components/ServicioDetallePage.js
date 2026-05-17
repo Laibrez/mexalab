@@ -106,7 +106,7 @@ const ServicioDetallePage = ({ category, setActivePage }) => {
 
   return (
     <div className="min-h-screen bg-teal-50 py-12 px-4">
-      <div className="max-w-6xl mx-auto">
+      <div className="w-[95%] max-w-[1600px] mx-auto">
         <button 
           onClick={() => setActivePage('servicios')}
           className="mb-8 flex items-center text-teal-600 font-semibold hover:text-teal-700 transition-colors"

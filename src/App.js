@@ -14,7 +14,7 @@ const App = () => {
   const renderPage = () => {
     switch(activePage) {
       case 'conocenos':
-        return <ConocenosPage />;
+        return <ConocenosPage setActivePage={setActivePage} />;
       case 'domicilio':
         return <DomicilioPage />;
       case 'servicios':
@@ -24,7 +24,7 @@ const App = () => {
       case 'servicio_detalle':
         return <ServicioDetallePage category={selectedCategory} setActivePage={setActivePage} />;
       default:
-        return <ConocenosPage />;
+        return <ConocenosPage setActivePage={setActivePage} />;
     }
   };
 

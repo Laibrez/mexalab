@@ -1,46 +1,56 @@
 import React from 'react';
-import { Facebook, Twitter, Instagram } from 'lucide-react';
+import { Facebook, Twitter, Instagram, MapPin } from 'lucide-react';
 
 const LayoutFooter = () => {
   return (
-    <footer className="bg-gray-800 text-white py-8">
-      <div className="max-w-6xl mx-auto px-4">
+    <footer className="bg-gray-800 text-white py-6">
+      <div className="w-[95%] max-w-[1600px] mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">Laboratorio Clínico</h3>
-            <p className="text-gray-300">
+            <h3 className="text-lg lg:text-xl font-bold mb-4">Laboratorio Clínico</h3>
+            <p className="text-gray-300 text-sm lg:text-base leading-relaxed">
               Servicios de diagnóstico clínico con la más alta tecnología y calidad.
             </p>
           </div>
           <div>
-            <h3 className="text-xl font-bold mb-4">Contacto</h3>
-            <div className="text-gray-300 mb-4">
-              <p className="font-semibold text-white mb-1">Sucursal Popular Rastro:</p>
-              <p>C. Aluminio 245-PB, Venustiano Carranza, 15220 CDMX</p>
+            <h3 className="text-lg lg:text-xl font-bold mb-4">Contacto</h3>
+            <div className="mb-3 text-sm lg:text-base">
+              <div className="flex items-center mb-1">
+                <MapPin className="w-4 h-4 text-teal-400 mr-2" />
+                <p className="font-bold text-white">Sucursal Popular Rastro:</p>
+              </div>
+              <a href="https://maps.google.com/?q=C.+Aluminio+245-PB,+Popular+Rastro,+Venustiano+Carranza,+15220+Ciudad+de+México,+CDMX" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors block ml-6">
+                C. Aluminio 245-PB, Venustiano Carranza, 15220 CDMX
+              </a>
             </div>
-            <div className="text-gray-300 mb-4">
-              <p className="font-semibold text-white mb-1">Sucursal Tlatelolco:</p>
-              <p>Av. Ricardo Flores Magón 160-B, Cuauhtémoc, CDMX</p>
+            <div className="mb-3 text-sm lg:text-base">
+              <div className="flex items-center mb-1">
+                <MapPin className="w-4 h-4 text-teal-400 mr-2" />
+                <p className="font-bold text-white">Sucursal Tlatelolco:</p>
+              </div>
+              <a href="https://maps.google.com/?q=Av.+Ricardo+Flores+Magón+160-B,+Colonia+Buenavista,+Cuauhtémoc,+Ciudad+de+México,+CDMX" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors block ml-6">
+                Av. Ricardo Flores Magón 160-B, Cuauhtémoc, CDMX
+              </a>
             </div>
-            <p className="text-gray-300 mb-2">55 8498 4243</p>
-            <p className="text-gray-300">mexalab.1@gmail.com</p>
+            <p className="text-gray-300 mb-1 text-sm lg:text-base font-medium">55 8498 4243</p>
+            <p className="text-gray-300 text-sm lg:text-base">mexalab.1@gmail.com</p>
           </div>
           <div>
-            <h3 className="text-xl font-bold mb-4">Redes Sociales</h3>
+            <h3 className="text-lg lg:text-xl font-bold mb-4">Redes Sociales</h3>
             <div className="flex space-x-4">
               <a href="https://facebook.com/mexalab" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
-                <Facebook className="w-6 h-6" />
+                <Facebook className="w-5 h-5 lg:w-6 lg:h-6" />
               </a>
               <a href="https://twitter.com/mexalab" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
-                <Twitter className="w-6 h-6" />
+                <Twitter className="w-5 h-5 lg:w-6 lg:h-6" />
               </a>
               <a href="https://instagram.com/mexalab" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
-                <Instagram className="w-6 h-6" />
+                <Instagram className="w-5 h-5 lg:w-6 lg:h-6" />
               </a>
             </div>
           </div>
         </div>
-        <div className="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
+        <div className="border-t border-gray-700 mt-6 pt-4 text-center text-gray-400 text-sm">
           <p>© {new Date().getFullYear()} Laboratorio Clínico. Todos los derechos reservados.</p>
         </div>
       </div>

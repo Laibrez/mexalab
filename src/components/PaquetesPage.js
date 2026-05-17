@@ -112,7 +112,7 @@ const PaquetesPage = () => {
       {/* Hero Section */}
       <div className="relative overflow-hidden bg-teal-600 text-white">
         <div className="absolute inset-0 bg-black bg-opacity-10"></div>
-        <div className="relative max-w-6xl mx-auto px-4 py-16 text-center">
+        <div className="relative w-[95%] max-w-[1600px] mx-auto px-4 py-16 text-center">
           <h1 className="text-5xl font-bold mb-4">Nuestros Paquetes</h1>
           <p className="text-xl opacity-90 max-w-3xl mx-auto">
             Descubre los diferentes perfiles y check-ups médicos que hemos diseñado para el cuidado integral de tu salud y la de tu familia.
@@ -120,7 +120,7 @@ const PaquetesPage = () => {
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 py-8 relative z-10 -mt-8">
+      <div className="w-[95%] max-w-[1600px] mx-auto px-4 py-12 mt-12 relative z-10">
         
         {/* Folletos (Imágenes subidas) */}
         <div className="bg-white rounded-2xl shadow-xl p-8 mb-12 border-t-4 border-teal-500">

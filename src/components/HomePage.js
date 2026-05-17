@@ -41,7 +41,7 @@ const HomePage = ({ setActivePage }) => {
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative bg-white py-20 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="w-[95%] max-w-[1600px] mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-5xl md:text-6xl font-bold text-text-gray mb-6">
               Laboratorio Clínico MexaLab
@@ -72,7 +72,7 @@ const HomePage = ({ setActivePage }) => {
 
       {/* Services Section */}
       <section className="py-16 bg-light-gray">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="w-[95%] max-w-[1600px] mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-text-gray mb-4">Servicios</h2>
             <p className="text-xl text-text-gray">Atención integral para tu bienestar</p>
@@ -105,7 +105,7 @@ const HomePage = ({ setActivePage }) => {
 
       {/* Why Choose MexaLab Section */}
       <section className="py-16 bg-light-gray">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="w-[95%] max-w-[1600px] mx-auto px-4">
           <div className="bg-white rounded-2xl shadow-lg p-12">
             <div className="text-center mb-12">
               <h2 className="text-4xl font-bold text-text-gray mb-4">¿Por qué elegir MexaLab?</h2>
@@ -133,7 +133,7 @@ const HomePage = ({ setActivePage }) => {
 
       {/* Call to Action Section */}
       <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="w-[95%] max-w-[1600px] mx-auto px-4">
           <div className="bg-medical-blue rounded-2xl p-12 text-center text-white">
             <h2 className="text-4xl font-bold mb-4">¿Listo para cuidar tu salud?</h2>
             <p className="text-xl mb-8 opacity-90">

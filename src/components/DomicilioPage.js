@@ -114,7 +114,7 @@ const DomicilioPage = () => {
       {/* Hero Section */}
       <div className="relative overflow-hidden bg-teal-600 text-white">
         <div className="absolute inset-0 bg-black bg-opacity-10"></div>
-        <div className="relative max-w-6xl mx-auto px-4 py-16">
+        <div className="relative w-[95%] max-w-[1600px] mx-auto px-4 py-16">
           <div className="text-center">
             <h1 className="text-5xl font-bold mb-4">Servicios a Domicilio</h1>
             <p className="text-xl opacity-90 max-w-3xl mx-auto">
@@ -125,7 +125,7 @@ const DomicilioPage = () => {
         
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 py-8 -mt-8 relative z-10">
+      <div className="w-[95%] max-w-[1600px] mx-auto px-4 py-12 mt-12 relative z-10">
         {/* Main Benefits */}
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           <div className="bg-white rounded-2xl shadow-2xl p-8 border-t-4 border-teal-500">
@@ -261,8 +261,8 @@ const DomicilioPage = () => {
                     <div className="w-16 h-16 bg-teal-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                       <span className="text-white font-bold text-xl">{step.number}</span>
                     </div>
-                    <div className="w-8 h-8 bg-white border-4 border-teal-500 rounded-full flex items-center justify-center mx-auto -mt-4 relative z-10">
-                      <IconComponent className="w-4 h-4 text-teal-500" />
+                    <div className="w-10 h-10 bg-white border border-teal-100 shadow-md rounded-full flex items-center justify-center mx-auto mt-2 relative z-10">
+                      <IconComponent className="w-5 h-5 text-teal-500" />
                     </div>
                   </div>
                   <h4 className="text-lg font-semibold text-gray-800 mb-2">{step.title}</h4>
