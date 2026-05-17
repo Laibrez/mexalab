@@ -9,7 +9,7 @@ const ConocenosPage = ({ setActivePage }) => {
         {/* Top Two Big Cards */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-6">
           {/* Left Hero Card */}
-          <div className="lg:col-span-7 bg-[#f6f5ef] rounded-[2rem] p-8 lg:p-14 flex flex-col justify-between relative overflow-hidden">
+          <div className="lg:col-span-8 bg-[#f6f5ef] rounded-[2rem] p-8 lg:p-14 flex flex-col justify-between relative overflow-hidden">
             <div>
               <div className="inline-flex items-center px-4 py-2 bg-teal-100 text-teal-900 rounded-full text-sm font-bold mb-8 shadow-sm">
                 <span className="mr-2">+</span> Laboratorio Clínico
@@ -67,7 +67,7 @@ const ConocenosPage = ({ setActivePage }) => {
           </div>
 
           {/* Right Hero Image Card */}
-          <div className="lg:col-span-5 bg-gray-200 rounded-[2rem] relative overflow-hidden min-h-[400px] lg:min-h-full">
+          <div className="lg:col-span-4 bg-gray-200 rounded-[2rem] relative overflow-hidden min-h-[400px] lg:min-h-full">
             <img src="/mexa_quimico.png" alt="Equipo Médico Mexalab" className="absolute inset-0 w-full h-full object-cover object-top" />
             
             {/* Floating Rating Tag */}
@@ -217,7 +217,7 @@ const ConocenosPage = ({ setActivePage }) => {
           <p className="text-center text-gray-600 mb-10 text-lg md:text-xl lg:text-2xl max-w-4xl mx-auto">
             Contamos con equipo de última generación para brindarte resultados precisos y confiables en nuestros estudios de imagen.
           </p>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 bg-white border border-gray-100 flex justify-center items-center p-4">
               <img src="/SALUD es riqueza.png" alt="Salud es riqueza" className="w-full h-64 md:h-80 lg:h-[450px] object-contain transform group-hover:scale-105 transition-transform duration-500" />
               <div className="absolute inset-0 bg-teal-900 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
