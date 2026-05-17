@@ -14,7 +14,7 @@ const LayoutNavbar = ({ activePage, setActivePage }) => {
         <div className="flex justify-between items-center">
           <div className="flex space-x-7">
             <div className="flex items-center py-3 px-2">
-              <img src="/logo.png" alt="MexaLab Logo" className="h-16 md:h-20 lg:h-24 cursor-pointer hover:opacity-80 transition-opacity" onClick={() => setActivePage('conocenos')} />
+              <img src="/logo.png" alt="MexaLab Logo" className="h-16 md:h-20 lg:h-24 w-auto object-contain cursor-pointer hover:opacity-80 transition-opacity" onClick={() => setActivePage('conocenos')} />
             </div>
           </div>
           <div className="hidden lg:flex items-center space-x-4">
