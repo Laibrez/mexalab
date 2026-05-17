@@ -10,7 +10,7 @@ const LayoutNavbar = ({ activePage, setActivePage }) => {
   };
   return (
     <nav className="bg-white shadow-md relative z-50">
-      <div className="w-[95%] max-w-[1600px] mx-auto px-4">
+      <div className="w-[95%] max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center">
           <div className="flex space-x-7">
             <div className="flex items-center py-3 px-2">

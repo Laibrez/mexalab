@@ -4,7 +4,7 @@ import { Facebook, Twitter, Instagram, MapPin } from 'lucide-react';
 const LayoutFooter = () => {
   return (
     <footer className="bg-gray-800 text-white py-6">
-      <div className="w-[95%] max-w-[1600px] mx-auto px-4">
+      <div className="w-[95%] max-w-7xl mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-lg lg:text-xl font-bold mb-4">Laboratorio Clínico</h3>

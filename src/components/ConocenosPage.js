@@ -5,7 +5,7 @@ const ConocenosPage = ({ setActivePage }) => {
   return (
     <div className="min-h-screen bg-teal-50">
       {/* Bento Box Hero Section */}
-      <div className="relative w-[95%] max-w-[1600px] mx-auto px-4 pt-8 pb-12">
+      <div className="relative w-[95%] max-w-7xl mx-auto px-4 pt-8 pb-12">
         {/* Top Two Big Cards */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-6">
           {/* Left Hero Card */}
@@ -41,14 +41,14 @@ const ConocenosPage = ({ setActivePage }) => {
             
             <div className="flex items-center gap-4">
               <div className="flex -space-x-4">
-                <div className="w-12 h-12 rounded-full bg-gray-300 border-2 border-[#f6f5ef] flex items-center justify-center overflow-hidden"><img src="/SALUD es riqueza.png" alt="Avatar 1" className="w-full h-full object-cover" /></div>
-                <div className="w-12 h-12 rounded-full bg-gray-400 border-2 border-[#f6f5ef] flex items-center justify-center overflow-hidden"><img src="/Bienestar_Mexalab.png" alt="Avatar 2" className="w-full h-full object-cover" /></div>
-                <div className="w-12 h-12 rounded-full bg-teal-100 border-2 border-[#f6f5ef] flex items-center justify-center font-bold text-teal-900">
+                <div className="w-12 h-12 rounded-full bg-gray-300 border-2 border-[#f6f5ef] flex items-center justify-center overflow-hidden relative z-20"><img src="/SALUD es riqueza.png" alt="Avatar 1" className="w-full h-full object-cover" /></div>
+                <div className="w-12 h-12 rounded-full bg-gray-400 border-2 border-[#f6f5ef] flex items-center justify-center overflow-hidden relative z-10"><img src="/Bienestar_Mexalab.png" alt="Avatar 2" className="w-full h-full object-cover" /></div>
+                <div className="w-12 h-12 rounded-full bg-teal-100 border-2 border-[#f6f5ef] flex items-center justify-center font-bold text-teal-900 relative z-0">
                   +1K
                 </div>
               </div>
-              <p className="text-sm text-gray-500 max-w-[150px] leading-tight">
-                pacientes cada mes satisfechos
+              <p className="text-sm text-gray-500 max-w-[200px] leading-tight">
+                <span className="font-bold text-teal-900">+5 años en el mercado</span> y pacientes satisfechos cada mes
               </p>
             </div>
           </div>
@@ -122,7 +122,7 @@ const ConocenosPage = ({ setActivePage }) => {
         </div>
       </div>
 
-      <div className="w-[95%] max-w-[1600px] mx-auto px-4 py-8 relative z-10">
+      <div className="w-[95%] max-w-7xl mx-auto px-4 py-8 relative z-10">
         {/* About Section */}
         <div className="bg-white rounded-3xl shadow-2xl p-10 md:p-16 mb-16 border-t-8 border-teal-500">
           <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
