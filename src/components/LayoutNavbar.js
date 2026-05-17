@@ -14,7 +14,8 @@ const LayoutNavbar = ({ activePage, setActivePage }) => {
         <div className="flex justify-between">
           <div className="flex space-x-7">
             <div className="flex items-center py-4 px-2">
-              <span className="font-semibold text-gray-800 text-2xl">Laboratorio Clínico</span>
+              <img src="/logo.png" alt="MexaLab Logo" className="h-10 mr-3" />
+              <span className="font-semibold text-gray-800 text-2xl hidden sm:block">Laboratorio Clínico</span>
             </div>
           </div>
           <div className="hidden md:flex items-center space-x-1">

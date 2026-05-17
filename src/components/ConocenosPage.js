@@ -21,28 +21,35 @@ const ConocenosPage = () => {
       <div className="max-w-6xl mx-auto px-4 py-8 -mt-8 relative z-10">
         {/* About Section */}
         <div className="bg-white rounded-2xl shadow-2xl p-8 mb-8 border-t-4 border-teal-500">
-          <div className="flex items-center mb-6">
-            <div className="w-12 h-12 bg-teal-500 rounded-full flex items-center justify-center mr-4">
-              <Heart className="w-6 h-6 text-white" />
-            </div>
-            <h2 className="text-3xl font-bold text-gray-800">¿Quiénes Somos?</h2>
-          </div>
-          <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-            Somos un laboratorio clínico fundado en Ciudad de México, ofreciendo servicios a hoteles, clínicas,
-            empresas grandes y medianas. Fundado en medio de la pandemia, buscamos brindar soluciones accesibles 
-            y de calidad a los problemas de salud en México.
-          </p>
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-teal-500 rounded-full flex items-center justify-center mr-4">
+                  <Heart className="w-6 h-6 text-white" />
+                </div>
+                <h2 className="text-3xl font-bold text-gray-800">¿Quiénes Somos?</h2>
+              </div>
+              <p className="text-gray-600 mb-6 text-lg leading-relaxed">
+                Somos un laboratorio clínico fundado en Ciudad de México, ofreciendo servicios a hoteles, clínicas,
+                empresas grandes y medianas. Fundado en medio de la pandemia, buscamos brindar soluciones accesibles 
+                y de calidad a los problemas de salud en México.
+              </p>
 
-          {/* Mission Section */}
-          <div className="bg-teal-50 p-8 rounded-xl mb-8 border-l-4 border-teal-500">
-            <h3 className="text-2xl font-semibold text-teal-700 mb-4 flex items-center">
-              <Award className="w-6 h-6 mr-2" />
-              Misión
-            </h3>
-            <p className="text-gray-700 text-lg leading-relaxed">
-              Proporcionar servicios de diagnóstico clínico con la más alta calidad, tecnología de punta 
-              y personal altamente capacitado, contribuyendo al bienestar de nuestros pacientes.
-            </p>
+              {/* Mission Section */}
+              <div className="bg-teal-50 p-6 rounded-xl border-l-4 border-teal-500">
+                <h3 className="text-2xl font-semibold text-teal-700 mb-4 flex items-center">
+                  <Award className="w-6 h-6 mr-2" />
+                  Misión
+                </h3>
+                <p className="text-gray-700 text-lg leading-relaxed">
+                  Proporcionar servicios de diagnóstico clínico con la más alta calidad, tecnología de punta 
+                  y personal altamente capacitado, contribuyendo al bienestar de nuestros pacientes.
+                </p>
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <img src="/mexa_quimico.png" alt="Químico de MexaLab" className="rounded-xl shadow-lg max-h-96 object-cover" />
+            </div>
           </div>
         </div>
 
@@ -110,6 +117,18 @@ const ConocenosPage = () => {
               <img src="/calidad_servicio.png" alt="Calidad y Servicio" className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500" />
               <div className="absolute inset-0 bg-teal-900 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                 <span className="text-white font-semibold text-lg">Resultados Inmediatos</span>
+              </div>
+            </div>
+            <div className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
+              <img src="/mexalab_calle.jpeg" alt="Instalaciones MexaLab" className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500" />
+              <div className="absolute inset-0 bg-teal-900 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <span className="text-white font-semibold text-lg">Nuestras Instalaciones</span>
+              </div>
+            </div>
+            <div className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300 bg-white flex items-center justify-center">
+              <img src="/logo.png" alt="Logo MexaLab" className="w-3/4 h-3/4 object-contain transform group-hover:scale-110 transition-transform duration-500" />
+              <div className="absolute inset-0 bg-teal-900 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <span className="text-white font-semibold text-lg">Identidad MexaLab</span>
               </div>
             </div>
           </div>
