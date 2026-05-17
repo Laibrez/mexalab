@@ -152,7 +152,7 @@ const ConocenosPage = ({ setActivePage }) => {
               </div>
             </div>
             <div className="flex justify-center relative">
-              <img src="/equipo_mexalab.png" alt="Equipo de MexaLab" className="rounded-2xl shadow-xl w-full max-h-[400px] lg:max-h-[500px] object-cover" />
+              <img src="/equipo_mexalab.png" alt="Equipo de MexaLab" className="rounded-2xl shadow-xl w-full max-w-lg lg:max-w-xl max-h-[300px] lg:max-h-[400px] object-cover" />
             </div>
           </div>
         </div>
@@ -197,7 +197,7 @@ const ConocenosPage = ({ setActivePage }) => {
         </div>
 
         {/* Ultrasound Section */}
-        <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-12 mb-16 border-t-8 border-teal-500">
+        <div className="max-w-6xl mx-auto bg-white rounded-3xl shadow-2xl p-8 md:p-12 mb-16 border-t-8 border-teal-500">
           <div className="flex items-center mb-8 text-center justify-center">
             <h3 className="text-3xl lg:text-4xl font-bold text-gray-800">Nuestra Presentación</h3>
           </div>
