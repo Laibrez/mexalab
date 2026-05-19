@@ -287,12 +287,12 @@ const ConocenosPage = ({ setActivePage }) => {
                 <div className="min-w-0 flex-1">
                   <h4 className="font-bold text-lg lg:text-2xl text-teal-700 mb-2">Teléfono</h4>
                   <div className="flex flex-col gap-3 mt-2">
-                    <a href="tel:+525584984243" className="inline-flex items-center text-teal-600 hover:text-teal-800 transition-colors text-base sm:text-lg font-semibold bg-transparent px-4 py-2 rounded-lg border border-teal-200 w-fit">
-                      <Phone className="w-5 h-5 mr-2" />
+                    <a href="tel:+525584984243" className="inline-flex items-center text-teal-600 hover:text-teal-800 transition-colors text-sm sm:text-base lg:text-lg font-medium w-fit">
+                      <Phone className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                       Llamar: 55 8498 4243
                     </a>
-                    <a href="https://wa.me/525584984243" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-green-600 hover:text-green-800 transition-colors text-base sm:text-lg font-semibold bg-transparent px-4 py-2 rounded-lg border border-green-200 w-fit">
-                      <MessageCircle className="w-5 h-5 mr-2" />
+                    <a href="https://wa.me/525584984243" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-green-600 hover:text-green-800 transition-colors text-sm sm:text-base lg:text-lg font-medium w-fit">
+                      <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                       WhatsApp: 55 8498 4243
                     </a>
                   </div>
