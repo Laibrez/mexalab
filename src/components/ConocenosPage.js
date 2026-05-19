@@ -278,7 +278,7 @@ const ConocenosPage = ({ setActivePage }) => {
                 </div>
                 <div className="min-w-0 flex-1">
                   <h4 className="font-bold text-lg lg:text-2xl text-teal-700 mb-2">Teléfono</h4>
-                  <p className="text-gray-600 text-base sm:text-lg lg:text-xl font-medium break-words">55 8498 4243</p>
+                  <a href="tel:+525584984243" className="block text-gray-600 text-base sm:text-lg lg:text-xl font-medium break-words hover:text-teal-600 transition-colors">55 8498 4243</a>
                 </div>
               </div>
             </div>

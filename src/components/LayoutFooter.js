@@ -32,7 +32,7 @@ const LayoutFooter = () => {
                 Av. Ricardo Flores Magón 160-B, Cuauhtémoc, CDMX
               </a>
             </div>
-            <p className="text-gray-300 mb-1 text-sm lg:text-base font-medium">55 8498 4243</p>
+            <a href="tel:+525584984243" className="block text-gray-300 mb-1 text-sm lg:text-base font-medium hover:text-white transition-colors">55 8498 4243</a>
             <p className="text-gray-300 text-sm lg:text-base">mexalab.1@gmail.com</p>
           </div>
           <div>
