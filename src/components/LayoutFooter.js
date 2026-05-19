@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Twitter, Instagram, MapPin } from 'lucide-react';
+import { Facebook, Twitter, Instagram, MapPin, Phone, MessageCircle } from 'lucide-react';
 
 const LayoutFooter = () => {
   return (
@@ -32,7 +32,16 @@ const LayoutFooter = () => {
                 Av. Ricardo Flores Magón 160-B, Cuauhtémoc, CDMX
               </a>
             </div>
-            <a href="tel:+525584984243" className="block text-gray-300 mb-1 text-sm lg:text-base font-medium hover:text-white transition-colors">55 8498 4243</a>
+            <div className="flex flex-col gap-2 mt-4 mb-4">
+              <a href="tel:+525584984243" className="flex items-center text-teal-400 hover:text-teal-300 transition-colors text-sm lg:text-base font-semibold">
+                <Phone className="w-4 h-4 mr-2" />
+                Llamar: 55 8498 4243
+              </a>
+              <a href="https://wa.me/525584984243" target="_blank" rel="noopener noreferrer" className="flex items-center text-green-400 hover:text-green-300 transition-colors text-sm lg:text-base font-semibold">
+                <MessageCircle className="w-4 h-4 mr-2" />
+                Mandar mensaje: 55 8498 4243
+              </a>
+            </div>
             <p className="text-gray-300 text-sm lg:text-base">mexalab.1@gmail.com</p>
           </div>
           <div>
