@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Clock, Mail, Globe, Users, Award, Heart } from 'lucide-react';
+import { MapPin, Phone, Clock, Mail, Globe, Users, Award, Heart, MessageCircle } from 'lucide-react';
 
 const ConocenosPage = ({ setActivePage }) => {
   return (
@@ -278,7 +278,16 @@ const ConocenosPage = ({ setActivePage }) => {
                 </div>
                 <div className="min-w-0 flex-1">
                   <h4 className="font-bold text-lg lg:text-2xl text-teal-700 mb-2">Teléfono</h4>
-                  <a href="tel:+525584984243" className="block text-gray-600 text-base sm:text-lg lg:text-xl font-medium break-words hover:text-teal-600 transition-colors">55 8498 4243</a>
+                  <div className="flex flex-col gap-3 mt-2">
+                    <a href="tel:+525584984243" className="inline-flex items-center text-teal-600 hover:text-teal-800 transition-colors text-base sm:text-lg font-semibold bg-white px-4 py-2 rounded-lg shadow-sm border border-teal-100 w-fit">
+                      <Phone className="w-5 h-5 mr-2" />
+                      Llamar: 55 8498 4243
+                    </a>
+                    <a href="https://wa.me/525584984243" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-green-600 hover:text-green-800 transition-colors text-base sm:text-lg font-semibold bg-white px-4 py-2 rounded-lg shadow-sm border border-green-100 w-fit">
+                      <MessageCircle className="w-5 h-5 mr-2" />
+                      WhatsApp: 55 8498 4243
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
