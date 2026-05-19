@@ -338,53 +338,53 @@ const ConocenosPage = ({ setActivePage }) => {
         </div>
 
         {/* Certifications Section */}
-        <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-12 mb-16">
-          <h3 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-10 text-center">Permisos y Certificaciones</h3>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="group bg-teal-50 p-6 lg:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-teal-200 flex flex-col justify-between">
+        <div className="bg-white rounded-3xl shadow-2xl p-6 md:p-8 mb-16 max-w-5xl mx-auto">
+          <h3 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-8 text-center">Permisos y Certificaciones</h3>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="group bg-teal-50 p-5 lg:p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-teal-200 flex flex-col justify-between">
               <div>
-                <div className="w-12 h-12 bg-teal-500 rounded-full flex items-center justify-center mb-5 mx-auto">
-                  <Award className="w-6 h-6 text-white" />
+                <div className="w-10 h-10 bg-teal-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                  <Award className="w-5 h-5 text-white" />
                 </div>
-                <h4 className="font-bold text-xl lg:text-2xl text-teal-700 mb-6 text-center">Aviso de Funcionamiento y Responsable Sanitario</h4>
+                <h4 className="font-bold text-lg lg:text-xl text-teal-700 mb-4 text-center leading-tight">Aviso de Funcionamiento y Responsable Sanitario</h4>
               </div>
               <p className="text-center mt-auto">
                 <a 
                   href="https://digipris.cofepris.gob.mx/getTramite?id=FPx%2FupvD6os2iFsXiD%2BDwwHBbQVBcNL5" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-block bg-teal-600 text-white px-6 py-3 text-lg rounded-xl hover:bg-teal-700 transition-colors font-medium w-full"
+                  className="inline-block bg-teal-600 text-white px-4 py-2 text-sm sm:text-base rounded-xl hover:bg-teal-700 transition-colors font-medium w-full"
                 >
                   Ver documento
                 </a>
               </p>
             </div>
             
-            <div className="group bg-teal-50 p-6 lg:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-teal-200 flex flex-col justify-between">
+            <div className="group bg-teal-50 p-5 lg:p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-teal-200 flex flex-col justify-between">
               <div>
-                <div className="w-12 h-12 bg-teal-500 rounded-full flex items-center justify-center mb-5 mx-auto">
-                  <Award className="w-6 h-6 text-white" />
+                <div className="w-10 h-10 bg-teal-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                  <Award className="w-5 h-5 text-white" />
                 </div>
-                <h4 className="font-bold text-xl lg:text-2xl text-teal-700 mb-6 text-center">Aviso de Publicidad</h4>
+                <h4 className="font-bold text-lg lg:text-xl text-teal-700 mb-4 text-center leading-tight">Aviso de Publicidad</h4>
               </div>
               <p className="text-center mt-auto">
                 <a 
                   href="https://digipris.cofepris.gob.mx/getTramiteid=6owRb9nmZWzQMpVdd2Uo%2BAHBbQVBcNL5" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-block bg-teal-600 text-white px-6 py-3 text-lg rounded-xl hover:bg-teal-700 transition-colors font-medium w-full"
+                  className="inline-block bg-teal-600 text-white px-4 py-2 text-sm sm:text-base rounded-xl hover:bg-teal-700 transition-colors font-medium w-full"
                 >
                   Ver documento
                 </a>
               </p>
             </div>
             
-            <div className="group bg-gray-50 p-6 lg:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-gray-200 flex flex-col justify-center">
-              <div className="w-12 h-12 bg-gray-500 rounded-full flex items-center justify-center mb-5 mx-auto">
-                <Award className="w-6 h-6 text-white" />
+            <div className="group bg-gray-50 p-5 lg:p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-gray-200 flex flex-col justify-center">
+              <div className="w-10 h-10 bg-gray-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                <Award className="w-5 h-5 text-white" />
               </div>
-              <h4 className="font-bold text-xl lg:text-2xl text-gray-700 mb-6 text-center">Certificaciones</h4>
-              <p className="text-gray-500 text-lg text-center font-medium">En proceso de integración</p>
+              <h4 className="font-bold text-lg lg:text-xl text-gray-700 mb-4 text-center leading-tight">Certificaciones</h4>
+              <p className="text-gray-500 text-sm sm:text-base text-center font-medium">En proceso de integración</p>
             </div>
           </div>
         </div>
