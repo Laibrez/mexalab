@@ -62,7 +62,7 @@ const LayoutFooter = () => {
               <a href="https://twitter.com/mexalab" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
                 <Twitter className="w-5 h-5 lg:w-6 lg:h-6" />
               </a>
-              <a href="https://instagram.com/mexalab" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+              <a href="https://instagram.com/mexa.labs" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
                 <Instagram className="w-5 h-5 lg:w-6 lg:h-6" />
               </a>
             </div>
