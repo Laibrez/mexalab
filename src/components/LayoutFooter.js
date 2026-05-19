@@ -56,7 +56,7 @@ const LayoutFooter = () => {
           <div>
             <h3 className="text-lg lg:text-xl font-bold mb-4">Redes Sociales</h3>
             <div className="flex space-x-4">
-              <a href="https://facebook.com/mexalab" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+              <a href="https://www.facebook.com/mexa.lab/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
                 <Facebook className="w-5 h-5 lg:w-6 lg:h-6" />
               </a>
               <a href="https://twitter.com/mexalab" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
