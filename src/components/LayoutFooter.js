@@ -22,7 +22,11 @@ const LayoutFooter = () => {
               <a href="https://maps.google.com/?q=C.+Aluminio+245-PB,+Popular+Rastro,+Venustiano+Carranza,+15220+Ciudad+de+México,+CDMX" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors block ml-6">
                 C. Aluminio 245-PB, Venustiano Carranza, 15220 CDMX
               </a>
-              <p className="text-teal-400 font-semibold block ml-6 mt-1 text-xs lg:text-sm">Tel: 55 9052 5634 / 55 9052 5635</p>
+              <div className="ml-6 mt-1 text-xs lg:text-sm flex flex-col gap-1">
+                <span className="text-teal-400 font-semibold">Teléfonos:</span>
+                <a href="tel:+525590525634" className="text-teal-300 hover:text-white transition-colors inline-block w-fit">55 9052 5634</a>
+                <a href="tel:+525590525635" className="text-teal-300 hover:text-white transition-colors inline-block w-fit">55 9052 5635</a>
+              </div>
             </div>
             <div className="mb-3 text-sm lg:text-base">
               <div className="flex items-center mb-1">
@@ -32,7 +36,10 @@ const LayoutFooter = () => {
               <a href="https://maps.google.com/?q=Av.+Ricardo+Flores+Magón+160-B,+Colonia+Buenavista,+Cuauhtémoc,+Ciudad+de+México,+CDMX" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors block ml-6">
                 Av. Ricardo Flores Magón 160-B, Cuauhtémoc, CDMX
               </a>
-              <p className="text-teal-400 font-semibold block ml-6 mt-1 text-xs lg:text-sm">Tel: 55 9720 2754</p>
+              <div className="ml-6 mt-1 text-xs lg:text-sm flex flex-col gap-1">
+                <span className="text-teal-400 font-semibold">Teléfono:</span>
+                <a href="tel:+525597202754" className="text-teal-300 hover:text-white transition-colors inline-block w-fit">55 9720 2754</a>
+              </div>
             </div>
             <div className="flex flex-col gap-2 mt-4 mb-4">
               <a href="tel:+525584984243" className="flex items-center text-teal-400 hover:text-teal-300 transition-colors text-sm lg:text-base font-semibold">

@@ -255,7 +255,11 @@ const ConocenosPage = ({ setActivePage }) => {
                     Venustiano Carranza, 15220<br />
                     Ciudad de México, CDMX
                   </a>
-                  <p className="text-teal-600 font-semibold mt-2">Tel: 55 9052 5634 / 55 9052 5635</p>
+                  <div className="mt-2 flex flex-col gap-1">
+                    <span className="text-teal-700 font-semibold text-sm sm:text-base lg:text-lg">Teléfonos:</span>
+                    <a href="tel:+525590525634" className="text-teal-600 hover:text-teal-800 transition-colors font-medium text-sm sm:text-base lg:text-lg w-fit">55 9052 5634</a>
+                    <a href="tel:+525590525635" className="text-teal-600 hover:text-teal-800 transition-colors font-medium text-sm sm:text-base lg:text-lg w-fit">55 9052 5635</a>
+                  </div>
                 </div>
               </div>
               
@@ -270,7 +274,10 @@ const ConocenosPage = ({ setActivePage }) => {
                     Colonia Buenavista, Cuauhtémoc,<br />
                     Ciudad de México, CDMX
                   </a>
-                  <p className="text-teal-600 font-semibold mt-2">Tel: 55 9720 2754</p>
+                  <div className="mt-2 flex flex-col gap-1">
+                    <span className="text-teal-700 font-semibold text-sm sm:text-base lg:text-lg">Teléfono:</span>
+                    <a href="tel:+525597202754" className="text-teal-600 hover:text-teal-800 transition-colors font-medium text-sm sm:text-base lg:text-lg w-fit">55 9720 2754</a>
+                  </div>
                 </div>
               </div>
               <div className="flex items-start p-4 sm:p-6 lg:p-8 bg-teal-50 rounded-2xl">
