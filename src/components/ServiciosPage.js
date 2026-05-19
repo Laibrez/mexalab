@@ -254,7 +254,7 @@ const ServiciosPage = ({ setActivePage, setSelectedCategory }) => {
               <CheckCircle className="w-5 h-5 mr-2" />
               Agendar cita
             </button>
-            <a href="https://wa.me/525512345678" target="_blank" rel="noopener noreferrer" className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-teal-600 transition-all duration-300 flex items-center justify-center">
+            <a href="https://wa.me/525584984243" target="_blank" rel="noopener noreferrer" className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-teal-600 transition-all duration-300 flex items-center justify-center">
               Contactar por WhatsApp
             </a>
           </div>

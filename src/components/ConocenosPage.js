@@ -243,14 +243,14 @@ const ConocenosPage = ({ setActivePage }) => {
         <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-12 mb-16">
           <h3 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-10 text-center">Contacto</h3>
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
-            <div className="space-y-6 lg:space-y-8">
-              <div className="flex items-start p-6 lg:p-8 bg-teal-50 rounded-2xl">
-                <div className="w-12 h-12 flex-shrink-0 bg-teal-500 rounded-full flex items-center justify-center mr-5 mt-1">
-                  <MapPin className="w-6 h-6 text-white" />
+            <div className="space-y-4 lg:space-y-8">
+              <div className="flex items-start p-4 sm:p-6 lg:p-8 bg-teal-50 rounded-2xl">
+                <div className="w-10 h-10 lg:w-12 lg:h-12 flex-shrink-0 bg-teal-500 rounded-full flex items-center justify-center mr-3 lg:mr-5 mt-1">
+                  <MapPin className="w-5 h-5 lg:w-6 lg:h-6 text-white" />
                 </div>
-                <div>
-                  <h4 className="font-bold text-xl lg:text-2xl text-teal-700 mb-2">Sucursal Popular Rastro</h4>
-                  <a href="https://maps.google.com/?q=C.+Aluminio+245-PB,+Popular+Rastro,+Venustiano+Carranza,+15220+Ciudad+de+México,+CDMX" target="_blank" rel="noopener noreferrer" className="block text-gray-600 text-lg leading-relaxed hover:text-teal-600 transition-colors">
+                <div className="min-w-0 flex-1">
+                  <h4 className="font-bold text-lg lg:text-2xl text-teal-700 mb-2">Sucursal Popular Rastro</h4>
+                  <a href="https://maps.google.com/?q=C.+Aluminio+245-PB,+Popular+Rastro,+Venustiano+Carranza,+15220+Ciudad+de+México,+CDMX" target="_blank" rel="noopener noreferrer" className="block text-gray-600 text-sm sm:text-base lg:text-lg leading-relaxed hover:text-teal-600 transition-colors break-words">
                     C. Aluminio 245-PB, Popular Rastro,<br />
                     Venustiano Carranza, 15220<br />
                     Ciudad de México, CDMX
@@ -258,62 +258,62 @@ const ConocenosPage = ({ setActivePage }) => {
                 </div>
               </div>
               
-              <div className="flex items-start p-6 lg:p-8 bg-teal-50 rounded-2xl">
-                <div className="w-12 h-12 flex-shrink-0 bg-teal-500 rounded-full flex items-center justify-center mr-5 mt-1">
-                  <MapPin className="w-6 h-6 text-white" />
+              <div className="flex items-start p-4 sm:p-6 lg:p-8 bg-teal-50 rounded-2xl">
+                <div className="w-10 h-10 lg:w-12 lg:h-12 flex-shrink-0 bg-teal-500 rounded-full flex items-center justify-center mr-3 lg:mr-5 mt-1">
+                  <MapPin className="w-5 h-5 lg:w-6 lg:h-6 text-white" />
                 </div>
-                <div>
-                  <h4 className="font-bold text-xl lg:text-2xl text-teal-700 mb-2">Sucursal Tlatelolco</h4>
-                  <a href="https://maps.google.com/?q=Av.+Ricardo+Flores+Magón+160-B,+Colonia+Buenavista,+Cuauhtémoc,+Ciudad+de+México,+CDMX" target="_blank" rel="noopener noreferrer" className="block text-gray-600 text-lg leading-relaxed hover:text-teal-600 transition-colors">
+                <div className="min-w-0 flex-1">
+                  <h4 className="font-bold text-lg lg:text-2xl text-teal-700 mb-2">Sucursal Tlatelolco</h4>
+                  <a href="https://maps.google.com/?q=Av.+Ricardo+Flores+Magón+160-B,+Colonia+Buenavista,+Cuauhtémoc,+Ciudad+de+México,+CDMX" target="_blank" rel="noopener noreferrer" className="block text-gray-600 text-sm sm:text-base lg:text-lg leading-relaxed hover:text-teal-600 transition-colors break-words">
                     Av. Ricardo Flores Magón 160-B,<br />
                     Colonia Buenavista, Cuauhtémoc,<br />
                     Ciudad de México, CDMX
                   </a>
                 </div>
               </div>
-              
-              <div className="flex items-start p-6 lg:p-8 bg-teal-50 rounded-2xl">
-                <div className="w-12 h-12 flex-shrink-0 bg-teal-500 rounded-full flex items-center justify-center mr-5 mt-1">
-                  <Phone className="w-6 h-6 text-white" />
+            </div>
+              <div className="flex items-start p-4 sm:p-6 lg:p-8 bg-teal-50 rounded-2xl">
+                <div className="w-10 h-10 lg:w-12 lg:h-12 flex-shrink-0 bg-teal-500 rounded-full flex items-center justify-center mr-3 lg:mr-5 mt-1">
+                  <Phone className="w-5 h-5 lg:w-6 lg:h-6 text-white" />
                 </div>
-                <div>
-                  <h4 className="font-bold text-xl lg:text-2xl text-teal-700 mb-2">Teléfono</h4>
-                  <p className="text-gray-600 text-xl font-medium">55 8498 4243</p>
+                <div className="min-w-0 flex-1">
+                  <h4 className="font-bold text-lg lg:text-2xl text-teal-700 mb-2">Teléfono</h4>
+                  <p className="text-gray-600 text-base sm:text-lg lg:text-xl font-medium break-words">55 8498 4243</p>
                 </div>
               </div>
             </div>
             
             <div className="space-y-6 lg:space-y-8">
-              <div className="flex items-start p-6 lg:p-8 bg-teal-50 rounded-2xl">
-                <div className="w-12 h-12 flex-shrink-0 bg-teal-500 rounded-full flex items-center justify-center mr-5 mt-1">
-                  <Clock className="w-6 h-6 text-white" />
+              <div className="flex items-start p-4 sm:p-6 lg:p-8 bg-teal-50 rounded-2xl">
+                <div className="w-10 h-10 lg:w-12 lg:h-12 flex-shrink-0 bg-teal-500 rounded-full flex items-center justify-center mr-3 lg:mr-5 mt-1">
+                  <Clock className="w-5 h-5 lg:w-6 lg:h-6 text-white" />
                 </div>
-                <div>
-                  <h4 className="font-bold text-xl lg:text-2xl text-teal-700 mb-2">Horario</h4>
-                  <p className="text-gray-600 text-lg mb-1">Lunes a Viernes: 7:00 am - 6:00 pm</p>
-                  <p className="text-gray-600 text-lg mb-1">Sábado: 7:00 am - 4:00 pm</p>
-                  <p className="text-gray-600 text-lg">Domingo: 8:00 am - 2:00 pm</p>
+                <div className="min-w-0 flex-1">
+                  <h4 className="font-bold text-lg lg:text-2xl text-teal-700 mb-2">Horario</h4>
+                  <p className="text-gray-600 text-sm sm:text-base lg:text-lg mb-1 break-words">Lunes a Viernes: 7:00 am - 6:00 pm</p>
+                  <p className="text-gray-600 text-sm sm:text-base lg:text-lg mb-1 break-words">Sábado: 7:00 am - 4:00 pm</p>
+                  <p className="text-gray-600 text-sm sm:text-base lg:text-lg break-words">Domingo: 8:00 am - 2:00 pm</p>
                 </div>
               </div>
               
-              <div className="flex items-start p-6 lg:p-8 bg-teal-50 rounded-2xl">
-                <div className="w-12 h-12 flex-shrink-0 bg-teal-500 rounded-full flex items-center justify-center mr-5 mt-1">
-                  <Mail className="w-6 h-6 text-white" />
+              <div className="flex items-start p-4 sm:p-6 lg:p-8 bg-teal-50 rounded-2xl">
+                <div className="w-10 h-10 lg:w-12 lg:h-12 flex-shrink-0 bg-teal-500 rounded-full flex items-center justify-center mr-3 lg:mr-5 mt-1">
+                  <Mail className="w-5 h-5 lg:w-6 lg:h-6 text-white" />
                 </div>
-                <div>
-                  <h4 className="font-bold text-xl lg:text-2xl text-teal-700 mb-2">Correos Electrónicos</h4>
-                  <p className="text-gray-600 text-lg mb-1">resultados@mexalab.com</p>
-                  <p className="text-gray-600 text-lg mb-1">servicioalcliente@mexalab.com</p>
-                  <p className="text-gray-600 text-lg">mexalab.1@gmail.com</p>
+                <div className="min-w-0 flex-1">
+                  <h4 className="font-bold text-lg lg:text-2xl text-teal-700 mb-2">Correos Electrónicos</h4>
+                  <p className="text-gray-600 text-sm sm:text-base lg:text-lg mb-1 break-words">resultados@mexalab.com</p>
+                  <p className="text-gray-600 text-sm sm:text-base lg:text-lg mb-1 break-words">servicioalcliente@mexalab.com</p>
+                  <p className="text-gray-600 text-sm sm:text-base lg:text-lg break-words">mexalab.1@gmail.com</p>
                 </div>
               </div>
             </div>
           </div>
           
           <div className="mt-12 text-center">
-            <div className="inline-flex items-center p-5 bg-teal-500 rounded-2xl text-white hover:bg-teal-600 transition-colors cursor-pointer shadow-lg">
-              <Globe className="w-6 h-6 mr-3" />
-              <span className="font-bold text-xl">laboratoriosmexalab.com</span>
+            <div className="inline-flex items-center p-4 sm:p-5 bg-teal-500 rounded-2xl text-white hover:bg-teal-600 transition-colors cursor-pointer shadow-lg w-full sm:w-auto justify-center break-words">
+              <Globe className="w-5 h-5 lg:w-6 lg:h-6 mr-2 lg:mr-3 flex-shrink-0" />
+              <span className="font-bold text-base sm:text-xl truncate">laboratoriosmexalab.com</span>
             </div>
           </div>
         </div>
