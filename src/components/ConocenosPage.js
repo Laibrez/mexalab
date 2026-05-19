@@ -271,7 +271,6 @@ const ConocenosPage = ({ setActivePage }) => {
                   </a>
                 </div>
               </div>
-            </div>
               <div className="flex items-start p-4 sm:p-6 lg:p-8 bg-teal-50 rounded-2xl">
                 <div className="w-10 h-10 lg:w-12 lg:h-12 flex-shrink-0 bg-teal-500 rounded-full flex items-center justify-center mr-3 lg:mr-5 mt-1">
                   <Phone className="w-5 h-5 lg:w-6 lg:h-6 text-white" />
