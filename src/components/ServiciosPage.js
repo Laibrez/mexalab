@@ -250,10 +250,10 @@ const ServiciosPage = ({ setActivePage, setSelectedCategory }) => {
             Nuestro equipo está listo para ayudarte a elegir el servicio que mejor se adapte a tus necesidades
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-teal-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 flex items-center justify-center">
+            <a href="https://wa.me/525584984243" target="_blank" rel="noopener noreferrer" className="bg-white text-teal-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 flex items-center justify-center">
               <CheckCircle className="w-5 h-5 mr-2" />
               Agendar cita
-            </button>
+            </a>
             <a href="https://wa.me/525584984243" target="_blank" rel="noopener noreferrer" className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-teal-600 transition-all duration-300 flex items-center justify-center">
               Contactar por WhatsApp
             </a>

@@ -280,11 +280,11 @@ const DomicilioPage = () => {
             Contacta con nosotros y recibe atención médica de calidad en la comodidad de tu hogar
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-teal-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 flex items-center justify-center">
+            <a href="tel:+525584984243" className="bg-white text-teal-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 flex items-center justify-center">
               <Phone className="w-5 h-5 mr-2" />
               Llamar ahora
-            </button>
-            <a href="https://wa.me/525512345678" target="_blank" rel="noopener noreferrer" className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-teal-600 transition-all duration-300 flex items-center justify-center">
+            </a>
+            <a href="https://wa.me/525584984243" target="_blank" rel="noopener noreferrer" className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-teal-600 transition-all duration-300 flex items-center justify-center">
               <MessageCircle className="w-5 h-5 mr-2" />
               WhatsApp
             </a>

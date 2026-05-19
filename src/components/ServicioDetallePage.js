@@ -143,10 +143,10 @@ const ServicioDetallePage = ({ category, setActivePage }) => {
                 </div>
                 <div className="p-6 bg-gray-50 border-t border-gray-100 mt-auto text-center">
                   <div className="text-3xl font-bold text-teal-600 mb-4">{paquete.precio}</div>
-                  <button className="w-full bg-teal-600 text-white py-2 rounded-lg font-semibold hover:bg-teal-700 transition-colors flex items-center justify-center">
+                  <a href="https://wa.me/525584984243" target="_blank" rel="noopener noreferrer" className="w-full bg-teal-600 text-white py-2 rounded-lg font-semibold hover:bg-teal-700 transition-colors flex items-center justify-center">
                     <ShoppingCart className="w-5 h-5 mr-2" />
                     Agendar Cita
-                  </button>
+                  </a>
                 </div>
               </div>
             ))}
@@ -157,9 +157,9 @@ const ServicioDetallePage = ({ category, setActivePage }) => {
             <p className="text-gray-600 mb-6">
               Sin embargo, contamos con todos los estudios individuales de {category}. Contáctanos para armar un paquete a tu medida.
             </p>
-            <button className="bg-teal-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-teal-700 transition-colors">
+            <a href="https://wa.me/525584984243" target="_blank" rel="noopener noreferrer" className="inline-block bg-teal-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-teal-700 transition-colors">
               Contactar Asesor
-            </button>
+            </a>
           </div>
         )}
       </div>
