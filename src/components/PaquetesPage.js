@@ -91,6 +91,42 @@ const PaquetesPage = () => {
   const [modalSuccess, setModalSuccess] = useState(false);
   const [selectedPaquete, setSelectedPaquete] = useState(null);
   const [formData, setFormData] = useState({ nombre: '', edad: '', telefono: '' });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "cc61350e-975e-4964-8c47-d531bc58d135",
+          subject: `Nueva solicitud: ${selectedPaquete?.titulo}`,
+          from_name: "Sitio Web Mexalab",
+          Paquete: selectedPaquete?.titulo,
+          Nombre: formData.nombre,
+          Edad: formData.edad,
+          Teléfono: formData.telefono,
+        }),
+      });
+      
+      const result = await response.json();
+      if (result.success) {
+        setModalSuccess(true);
+      } else {
+        alert("Hubo un error al enviar la solicitud. Por favor intenta de nuevo.");
+      }
+    } catch (error) {
+      alert("Error de conexión. Por favor intenta más tarde.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   const filters = ['Todos', 'Check-ups', 'Perfiles', 'Corazón'];
 
@@ -246,7 +282,7 @@ const PaquetesPage = () => {
             ) : (
               <div>
                 <h3 className="text-2xl font-bold text-gray-800 mb-6">Solicitar {selectedPaquete?.titulo}</h3>
-                <form onSubmit={(e) => { e.preventDefault(); setModalSuccess(true); }}>
+                <form onSubmit={handleSubmit}>
                   <div className="space-y-4">
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-1">Nombre completo</label>
@@ -260,8 +296,8 @@ const PaquetesPage = () => {
                       <label className="block text-sm font-medium text-gray-700 mb-1">Número de teléfono</label>
                       <input type="tel" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-teal-500 focus:border-teal-500" value={formData.telefono} onChange={e => setFormData({...formData, telefono: e.target.value})} />
                     </div>
-                    <button type="submit" className="w-full bg-teal-600 text-white font-bold py-3 rounded-lg hover:bg-teal-700 transition-colors mt-6">
-                      Enviar solicitud
+                    <button type="submit" disabled={isSubmitting} className={`w-full text-white font-bold py-3 rounded-lg transition-colors mt-6 ${isSubmitting ? 'bg-teal-400 cursor-not-allowed' : 'bg-teal-600 hover:bg-teal-700'}`}>
+                      {isSubmitting ? 'Enviando...' : 'Enviar solicitud'}
                     </button>
                   </div>
                 </form>
