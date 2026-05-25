@@ -9,17 +9,17 @@ const paquetesData = [
   },
   {
     titulo: "Check-up 24",
-    precio: "$580",
+    precio: "$630",
     estudios: ["Química Sanguínea de 24 Elementos", "Biometría Hemática", "Examen General de Orina"]
   },
   {
     titulo: "Check-up 33",
-    precio: "$720",
+    precio: "$820",
     estudios: ["Química Sanguínea de 33 Elementos", "Biometría Hemática", "Examen General de Orina"]
   },
   {
-    titulo: "Check-up 48",
-    precio: "$1,315",
+    titulo: "Paquete 48",
+    precio: "$1,712",
     estudios: ["Química Sanguínea de 48 Elementos", "Biometría Hemática", "Examen General de Orina"]
   },
   {
@@ -33,13 +33,13 @@ const paquetesData = [
     estudios: ["Papanicolau", "Cultivo Vaginal", "Examen General de Orina"]
   },
   {
-    titulo: "Paquete Corazón I",
-    precio: "$500",
+    titulo: "Paquete Corazón",
+    precio: "$630",
     estudios: ["Tele de Torax", "Electrocardiograma"]
   },
   {
-    titulo: "Check-up Corazón",
-    precio: "$550",
+    titulo: "Química 3 Corazón",
+    precio: "$190",
     estudios: ["Glucosa", "Colesterol", "Triglicéridos"]
   },
   {
@@ -59,7 +59,7 @@ const paquetesData = [
   },
   {
     titulo: "Check-up Natación",
-    precio: "$750",
+    precio: "$790",
     estudios: ["Perfil de lípidos", "Electrocardiograma"]
   },
   {
@@ -73,13 +73,13 @@ const paquetesData = [
     estudios: ["Exudado Faríngeo", "Examen General de Orina", "Coproparasitoscópico 3 muestras", "Biometría Hemática", "Grupo Sanguíneo y Factor RH"]
   },
   {
-    titulo: "Perfil Preoperatorio Básico",
-    precio: "$750",
+    titulo: "Perfil Preoperatorio",
+    precio: "$700",
     estudios: ["Examen General de Orina", "Biometría Hemática", "Grupo Sanguíneo y Factor RH", "Química de 3 Elementos", "TP y TPT"]
   },
   {
-    titulo: "Check-up 27",
-    precio: "$665",
+    titulo: "Paquete 27",
+    precio: "$650",
     estudios: ["Química Sanguínea de 27 Elementos", "Biometría Hemática", "Examen General de Orina"]
   }
 ];
